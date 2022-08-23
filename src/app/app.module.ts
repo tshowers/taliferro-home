@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { RecaptchaModule } from 'ng-recaptcha';
+import { NgwWowModule } from 'ngx-wow';
+
 import { environment as env } from "src/environments/environment";
 
 import { AppComponent } from './app.component';
@@ -34,18 +37,20 @@ import { ReturnPolicyComponent } from './return-policy/return-policy.component';
     FormsModule,
     AngularFireModule.initializeApp(env.firebaseConfig),
     AngularFirestoreModule,
+    RecaptchaModule,
+    NgwWowModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent},
-      {path: 'privacy-policy', component: PrivacyPolicyComponent},
-      {path: 'terms-of-service', component: TermsComponent},
-      {path: 'refund-policy', component: ReturnPolicyComponent},
-      {path: 'tyrone-showers', component: TyroneShowersComponent},
-      {path: '**', component: NotFoundComponent}
+      {path: '', component: HomeComponent, data: { title: 'Home' }},
+      {path: 'privacy-policy', component: PrivacyPolicyComponent, data: { title: 'Privacy Policy' }},
+      {path: 'terms-of-service', component: TermsComponent, data: { title: 'Terms of Service' }},
+      {path: 'refund-policy', component: ReturnPolicyComponent, data: { title: 'Return Policy' }},
+      {path: 'tyrone-showers', component: TyroneShowersComponent, data: { title: 'Tyrone Showers' }},
+      {path: '**', component: NotFoundComponent, data: { title: '404 Not Found' }}
     ]),
 
   ],
   exports: [
-    FormsModule
+    FormsModule, NgwWowModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

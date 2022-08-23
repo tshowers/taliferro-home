@@ -25,12 +25,14 @@
             "styles": [
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/wowjs/css/libs/animate.css",
               "src/styles/styleColor.css",
               "src/styles/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/wowjs/dist/wow.js"
             ]
           },
           "configurations": {
@@ -38,8 +40,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -98,12 +100,14 @@
             "styles": [
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/wowjs/css/libs/animate.css",
               "src/styles/styleColor.css",
               "src/styles/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/wowjs/dist/wow.js"
             ]
           }
         }

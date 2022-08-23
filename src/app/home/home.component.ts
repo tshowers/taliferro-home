@@ -29,12 +29,13 @@ export interface Contact {
 export class HomeComponent implements OnInit {
 
   public message?: any;
+  public captcha = '';
 
   public contact = <Contact> {
     firstName: '',
     lastName: '',
     emails: [],
-    notes: [] 
+    notes: [],
   }
 
   public email = <EmailAddress> {
@@ -57,6 +58,12 @@ export class HomeComponent implements OnInit {
   onSubmit(): void {
     this._dataService.add(environment.CONTACTS, this.contact);
     this.message="Thank You! Some one will get back to you shortly.";
+  }
+
+  resolved(captchaResponse: string) : void {
+    this.captcha = captchaResponse;
+    if (!environment.production)
+      console.log(this.captcha)
   }
 
 }
