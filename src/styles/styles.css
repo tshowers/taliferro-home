@@ -2892,7 +2892,7 @@ a {
   background: #fff;
 }
 
-.contact-form-section .center-form .contact-form input[type="text"], .contact-form-section .center-form .contact-form input[type="email"], .contact-form-section .center-form .contact-form textarea {
+.contact-form-section .center-form .contact-form input[type="text"], .contact-form select, .contact-form-section .center-form .contact-form input[type="email"], .contact-form-section .center-form .contact-form textarea {
   width: 100%;
   font-size: 1rem;
   line-height: 1.5rem;

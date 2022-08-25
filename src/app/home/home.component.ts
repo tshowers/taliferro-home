@@ -17,6 +17,10 @@ export interface Contact {
   lastName: string;
   emails: Array<EmailAddress>;
   notes: Array<Note>;
+  companyId: string;
+  requestType: string;
+  companyName: string;
+  website: string;
 };
 
 @Component({
@@ -36,6 +40,10 @@ export class HomeComponent implements OnInit {
     lastName: '',
     emails: [],
     notes: [],
+    companyId: 'Taliferro',
+    companyName: '',
+    requestType: '',
+    website: ''
   }
 
   public email = <EmailAddress> {
