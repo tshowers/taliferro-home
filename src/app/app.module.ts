@@ -14,7 +14,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsComponent } from './terms/terms.component';
 import { TyroneShowersComponent } from './tyrone-showers/tyrone-showers.component';
-import { AboutComponent } from './about/about.component';
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 import { DataService } from './services/data.service';
@@ -28,7 +27,6 @@ import { ReturnPolicyComponent } from './return-policy/return-policy.component';
     PrivacyPolicyComponent,
     TermsComponent,
     TyroneShowersComponent,
-    AboutComponent,
     ReturnPolicyComponent
   ],
   imports: [
@@ -45,6 +43,7 @@ import { ReturnPolicyComponent } from './return-policy/return-policy.component';
       {path: 'terms-of-service', component: TermsComponent, data: { title: 'Terms of Service' }},
       {path: 'refund-policy', component: ReturnPolicyComponent, data: { title: 'Return Policy' }},
       {path: 'tyrone-showers', component: TyroneShowersComponent, data: { title: 'Tyrone Showers' }},
+      { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
       {path: '**', component: NotFoundComponent, data: { title: '404 Not Found' }}
     ]),
 

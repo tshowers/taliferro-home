@@ -87,7 +87,7 @@ a:hover, a:active, a:focus {
 }
 
 .site-header .header-bg-text-color p {
-  color: #445383;
+  color: #1f263d;
 }
 
 .section-block h2 span.badge-primary, .section-block h3 span.badge-primary {
@@ -139,7 +139,7 @@ a:hover, a:active, a:focus {
 }
 
 .nav-light .navbar-brand {
-  color: #445383;
+  color: #1f263d;
 }
 
 .nav-light .navbar-brand:hover, .nav-light .navbar-brand:focus, .nav-light .navbar-brand:active {
@@ -147,7 +147,7 @@ a:hover, a:active, a:focus {
 }
 
 .nav-light .navbar-nav > li > a, .nav-light .nav > li > a:focus, .nav-light .nav > li > a:active {
-  color: #445383;
+  color: #1f263d;
 }
 
 .nav-light .nav > li > a:hover {
@@ -163,7 +163,7 @@ a:hover, a:active, a:focus {
 }
 
 .nav-light .menu-buttons ul li .button-simple {
-  color: #445383;
+  color: #1f263d;
 }
 
 .nav-light .menu-buttons ul li .button-simple:hover, .nav-light .menu-buttons ul li .button-simple:focus, .nav-light .menu-buttons ul li .button-simple:active {
@@ -221,7 +221,7 @@ a:hover, a:active, a:focus {
 }
 
 .nav-dark .nav-shadow .navbar-brand {
-  color: #445383;
+  color: #1f263d;
 }
 
 .nav-dark .nav-shadow .navbar-brand:hover, .nav-dark .nav-shadow .navbar-brand:focus, .nav-dark .nav-shadow .navbar-brand:active {
@@ -229,7 +229,7 @@ a:hover, a:active, a:focus {
 }
 
 .nav-dark .nav-shadow .navbar-nav > li > a, .nav-dark .nav-shadow .nav > li > a:focus, .nav-dark .nav-shadow .nav > li > a:active {
-  color: #445383;
+  color: #1f263d;
 }
 
 .nav-dark .nav-shadow .nav > li > a:hover {
@@ -237,7 +237,7 @@ a:hover, a:active, a:focus {
 }
 
 .nav-dark .nav-shadow .menu-buttons ul li .button-simple {
-  color: #445383;
+  color: #1f263d;
 }
 
 .nav-dark .nav-shadow .menu-buttons ul li .button-simple:hover, .nav-dark .nav-shadow .menu-buttons ul li .button-simple:focus, .nav-dark .nav-shadow .menu-buttons ul li .button-simple:active {
@@ -422,13 +422,13 @@ a:hover, a:active, a:focus {
 
 @media (max-width: 767px) {
   .nav-dark .navbar-brand {
-    color: #445383;
+    color: #1f263d;
   }
   .nav-dark .navbar-brand:hover, .nav-dark .navbar-brand:focus, .nav-dark .navbar-brand:active {
     color: #3497df;
   }
   .nav-dark .navbar-nav > li > a, .nav-dark .nav > li > a:focus, .nav-dark .nav > li > a:active {
-    color: #445383;
+    color: #1f263d;
   }
   .nav-dark .nav > li > a:hover {
     color: #3497df;
@@ -440,7 +440,7 @@ a:hover, a:active, a:focus {
     background: #3497df;
   }
   .nav-dark .menu-buttons ul li .button-simple {
-    color: #445383;
+    color: #1f263d;
   }
   .nav-dark .menu-buttons ul li .button-simple:hover, .nav-dark .menu-buttons ul li .button-simple:focus, .nav-dark .menu-buttons ul li .button-simple:active {
     color: #1eb0dd;
