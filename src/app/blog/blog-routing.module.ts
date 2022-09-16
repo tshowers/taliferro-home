@@ -20,6 +20,11 @@ import { Post17Component } from './post17/post17.component';
 import { Post18Component } from './post18/post18.component';
 import { Post19Component } from './post19/post19.component';
 import { Post20Component } from './post20/post20.component';
+import { Post21Component } from './post21/post21.component';
+import { Post22Component } from './post22/post22.component';
+import { Post23Component } from './post23/post23.component';
+import { Post24Component } from './post24/post24.component';
+import { Post25Component } from './post25/post25.component';
 
 const routes: Routes = [
     { path: 'dont-let-your-web-store-turn-into-a-desert', component: Post1Component, data: { title: 'Dont let your web store turn into a desert' } },
@@ -38,9 +43,14 @@ const routes: Routes = [
     { path: 'how-to-lead-teams-to-develop-and-deliver-a-fantastic-product-our-customers-love-and-cant-live-without', component: Post14Component, data: { title: 'How to lead teams to develop and deliver a fantastic product our customers love and cant live without' } },
     { path: 'so-you-want-a-technology-thought-leader-well-here-are-some-thoughts', component: Post15Component, data: { title: 'So you want a technology thought leader well here are some thoughts' } },
     { path: 'how-to-improve-and-innovate-dev-ops-environments-and-ci-cd-processes', component: Post16Component, data: { title: 'How to improve and innovate dev ops environments and CI/CD processes' } },
-    // { path: '', component: Post17Component, data: { title: '' } },
-    // { path: '', component: Post18Component, data: { title: '' } },
-    // { path: '', component: Post19Component, data: { title: '' } },
+    { path: 'the-top-five-reasons-our-laboratory-information-system-is-the-best', component: Post17Component, data: { title: 'The Top Five Reasons Our Laboratory Information System is the Best' } },
+    { path: 'five-tips-on-preventing-medical-errors-when-ordering-lab-tests', component: Post18Component, data: { title: '5 Tips on Preventing Medical Errors when Ordering Lab Tests' } },
+    { path: 'how-you-should-approach-a-stranger-about-your-product-or-service', component: Post19Component, data: { title: 'How you should approach a stranger about your product or service' } },
+    { path: 'how-to-turn-your-fashion-and-apparel-online-store-into-a-sales-juggernaut', component: Post20Component, data: { title: 'How to turn your fashion and apparel online store into a sales juggernaut' } },
+    { path: 'how-to-make-your-technology-infrastructure-future-proof', component: Post21Component, data: { title: 'How to make your technology infrastructure future proof' } },
+    // { path: '', component: Post20Component, data: { title: '' } },
+    // { path: '', component: Post20Component, data: { title: '' } },
+    // { path: '', component: Post20Component, data: { title: '' } },
     // { path: '', component: Post20Component, data: { title: '' } },
 ];
 

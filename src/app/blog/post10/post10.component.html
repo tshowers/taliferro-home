@@ -1,150 +1,147 @@
-<div id="page" class="site">
-    <div class="baseline-grid1"></div>
-    <header id="masthead" class="site-header">
-        <nav id="site-navigation" class="navbar main-navigation nav-dark navbar-top">
-            <div class="container-fluid container-nav nav-no-shadow">
-                <div class="container">
-                    <div class="menu-buttons">
-                        <ul>
-                            <li><a href="/#about" class="button button-simple" title="link">About</a></li>
-                            <li><a href="/#contact" class="button button-full" title="link">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="/">Taliferro Group</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid header-content-page header-content-white">
-            <div class="header-img-page"></div>
-            <div class="header-overlay-page"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 page-header-box">
-                        <h1>REST in peace</h1>
+<a href="#main-wrapper" id="backto-top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<!-- Preloader Start Here -->
+<div id="preloader"></div>
+<!-- Preloader End Here -->
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-bread-crumb-light [title]="'REST in peace'"></app-bread-crumb-light>
+    <section class="section-padding privacy-policy-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="single-blog">
+                        <div class="single-blog-content">
+                            <div class="post-thumbnail">
+                                <img class="rounded img-fluid wow fadeInUp" src="/assets/images/blog/rest-in-peace.png" alt="REST in peace">
+                            </div>
+                            <div class="author">
+                                <div class="author-thumb">
+                                    <img class="img-thumbnail wow fadeInUp" src="assets/media/blog/author-1.png" alt="Tyrone Showers">
+                                </div>
+                                <div class="info">
+                                    <h6 class="author-name">Tyrone Showers</h6>
+                                    <ul class="blog-meta list-unstyled">
+                                        <li>Sep 9, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 class="title mb--30  wow fadeInUp">Introduction</h2>
+                            <p class="wow fadeInUp mb--80"> Like other promising technologies, I confidently state that REST will soon head to the technological graveyard. Why? The use of REST is based on opinions instead of
+                                rules. I don't understand how REST turned into such a mishmash of divergent technologies when there is a well-documented thesis written on the subject. We are in an era
+                                where loose interpretation of REST confuses companies trying to implement the architectural style. </p>
+                            <h3 class="title mb--30  wow fadeInUp">REST</h3>
+                            <p class="wow fadeInUp"> The REST technology leaders are dictating the market direction of REST on faulty material or hearsay. If only I had a nickel for every time someone said my arguments on
+                                proper REST architecture are academic, I would be rich. When people mention REST API, I automatically know they have no clue about REST. The sad part is that this term
+                                is repeated on site after site, blog after blog. </p>
+                            <p class="wow fadeInUp"> Representational State Transfer Application Programming Interface </p>
+                            <p class="wow fadeInUp"> Seriously? </p>
+                            <p class="wow fadeInUp"> This ill-conceived grouping of acronyms, I predict, will bury REST. </p>
+                            <p class="wow fadeInUp"> An architectural style developed initially for exploiting the Internet for data access turned into a mechanism for creating functional interfaces is a sure sign that
+                                REST soon be extinct Technology extinction usually occurs when there is a complete misunderstanding of an architecture's intent. Unfortunately, REST is now used as
+                                another buzz acronym to pad resumes. </p>
+                            <p class="wow fadeInUp"> REST is simply an architectural style developed to transfer data in a usable fashion utilizing HTTP. </p>
+                            <p class="wow fadeInUp"> The evidence of REST implementation lies in the verbs used and their usage similarity to the database domain. Create, Retrieve, Update, and Delete in the database
+                                domain. POST, GET, PUT, and DELETE in the HTTP domain. </p>
+                            <p class="wow fadeInUp"> How much more evidence is needed to convey that REST is for data, not interfaces and function calls? Nevertheless, market leaders force-fit REST as the new SOAP (Simple
+                                Object Access Protocol). I surmise this is because most of the architects are former SOAP architects. The SOAP architects are using analogies they are most familiar
+                                with – SOAP. </p>
+                            <p class="wow fadeInUp"> SOAP is not REST. </p>
+                            <p class="wow fadeInUp"> SOAP is functional. </p>
+                            <p class="wow fadeInUp"> REST is data. </p>
+                            <p class="wow fadeInUp"> Regrettably, we will never see implementations that reflect the academic argument because the market drivers have already dictated that REST is the new SOAP.
+                                Consequently, REST extinction in 5 years or fewer is possible; unless the IT industry reevaluates its understanding of Roy Fielding's academic thesis as intended in
+                                real-world applications. </p>
+                            <p class="wow fadeInUp"> In 2000, a guy named Roy Thomas Fielding wrote a dissertation on Architectural Styles and the Design of Network-based Software Architectures. </p>
+                            <p class="wow fadeInUp"> Part of the dissertation (Chapter 5) started to receive significant attention from software developers around 2008. This section of the dissertation was about how to
+                                use standard web practices to access data representations over the Internet. </p>
+                            <p  class="wow fadeInUp"> One of the efforts was to emulate data (objects). Roy thought it made sense to use the Internet's URL hierarchal pattern (the slashes in a URL representing a path to
+                                the web page or resource) to emulate inherent hierarchal data relationships. </p>
+                            <p  class="wow fadeInUp"> e.g. http://www.taliferro.com/corporate/images/logo.gif </p>
+                            <p  class="wow fadeInUp"> Chapter 5 of the thesis is now the new hot mobile and internet architectural style that seems to have many interpretations and misconceptions. </p>
+                            <p  class="wow fadeInUp"> You can't imagine how many arguments I've witnessed interpreting what Roy's thesis means. </p>
+                            <p  class="wow fadeInUp"> The misconceptions are so heated and nasty that some of the biggest and most recognizable companies have bastardized and misinterpreted the concepts. </p>
+                            <p  class="wow fadeInUp"> The interpretations of Roy's dissertation have become so convoluted that anyone with a Computer Science degree before 1990 would be thoroughly confused by just looking
+                                at what the acronyms stood for - </p>
+                            <p  class="wow fadeInUp"> API (Application Programming Interface) and REST (Representational State Transfer) - and trying to draw a parallel on how they are being used today, how they seem to be
+                                used interchangeably and how such a tight association has been formed. </p>
+                            <p  class="wow fadeInUp mb--80"> I'll try and clarify REST, how APIs and REST are not the same, how you should approach a REST project and some best practices for creating an extensible REST
+                                infrastructure. </p>
+                            <h3 class="title mb--30  wow fadeInUp"> Client Server </h3>
+                            <p  class="wow fadeInUp"> The first constraint that Roy Fielding put on REST was the client/server constraint. The client/server constraint separates the concern of processing instructions. For
+                                example, computer systems operate more efficiently, focusing on specific tasks. </p>
+                            <p  class="wow fadeInUp mb--80"> In the client/server paradigm, the user interface is separate from where data resides and how the data should be processed. Thus a client focuses all computer
+                                processing power on how the screen looks to a user and doesn't concern itself with the accuracy of the information it displays. </p>
+                            <h3 class=" wow fadeInUp"> Stateless </h3>
+                            <p  class="wow fadeInUp"> When you type a web address in your browser, that address is a pointer of information. If you like the information you see in the web browser, chances are you want to
+                                create a reference or a bookmark. The bookmark allows you to return to the same address in another period for the same information. </p>
+                            <p  class="wow fadeInUp"> The Internet consists of dynamic content and static content. </p>
+                            <p  class="wow fadeInUp"> Dynamic content is built on the fly when a user visits a URL. </p>
+                            <p  class="wow fadeInUp"> Static content is content that doesn't change (usually). </p>
+                            <p  class="wow fadeInUp"> This concept is essential to understand so you can grasp the idea of stateless. </p>
+                            <p  class="wow fadeInUp"> When a URL address (web/internet resource) is stateless, the address you are referencing is not dependent on any previous action. Stateless web resources can be called
+                                at any time with the expectation that its current “state” is not reliant on any other activity. </p>
+                            <p  class="wow fadeInUp"> A dynamic web address is stateful and requires additional information from some previous action to understand what type of content to create. </p>
+                            <p  class="wow fadeInUp"> An excellent example of a stateful URL is an Internet shopping cart. When purchasing an item on the Internet, you enter your name, address, and payment associated with
+                                an object. Once all the information is gathered a confirmation page displays. During each data entry screen, the information you put in must be passed from one screen
+                                to the other. Otherwise, there would be no way of determining what you ordered or where to send the item. Thus, a stateful mechanism (a session) keeps your information
+                                nicely organized so that as you proceed from one page to the next, the current “state” of the order process is known. </p>
+                            <p  class="wow fadeInUp mb--80"> In REST, a URL should be stateless. The web resource URL being asked for by your browser or some program does not require a session or any additional information to
+                                access the information being requested. The web resource URL is static, meaning you always have the most current copy of data based on the never changing URL. </p>
+                            <h3 class="title mb--30  wow fadeInUp"> Cache </h3>
+                            <p  class="wow fadeInUp"> Another constraint Roy Fielding mentions is that the resource should be storable in a web browser or application program's cache. By being cacheable, the resource can
+                                be bookmarked for later retrieval. </p>
+                            <p  class="wow fadeInUp mb--80"> The combination of a web resource being stateless and cacheable provides a benefit to programs and web browser to expedite processing, reduce read write conflicts,
+                                reduce the reliance on an Internet connection, reduce bandwidth usage, reduce server load, make applications scalable which improves overall network efficiency. </p>
+                            <h3 class=" wow fadeInUp"> Uniform Interface </h3>
+                            <p  class="wow fadeInUp mb--80"> A common doctrine among software development efforts is to have a standard interface. Architecture is simplified, and visibility between software and data is enhanced.
+                            </p>
+                            <h3 class="title mb--30  wow fadeInUp"> Decoupling responsibilities encourages independence. </h3>
+                            <p  class="wow fadeInUp"> Today, developers don't want to accept decoupled responsibility and are unwilling accept degradation in efficiency. This trade-off is bastardizing REST and creating
+                                these one and two off REST scenarios, which make nothing more than a server application with a URL pointer. </p>
+                            <p  class="wow fadeInUp mb--80"> As Roy Fielding states, “In order to obtain a uniform interface, multiple architectural constraints are needed to guide the behavior of components. 5.1.5 Uniform
+                                Interface.” </p>
+                            <h3 class="title mb--30  wow fadeInUp"> Layered System </h3>
+                            <p  class="wow fadeInUp"> The layered architecture allows software designers to encapsulate code and logic to a specific domain, thus isolating the developers and users from the underlying
+                                complexity of software. Layering software does have its drawbacks in that latency begins to creep in, slowing down once nimble systems. </p>
+                            <p  class="wow fadeInUp"> When layers are used, the effort is to encapsulate legacy software, isolating deeper layers and legacy clients. This layering simplifies software collections and
+                                systems by moving infrequently used responsibilities to a standard broker. </p>
+                            <p  class="wow fadeInUp mb--80"> A brokering mechanism is used to improve system scalability. Brokering provides load balancing across networks. </p>
+                            <h3 class="title mb--30  wow fadeInUp"> Code On Demand </h3>
+                            <p  class="wow fadeInUp"> The last constraint Roy Fielding speaks of is the optional code on demand concept. </p>
+                            <p  class="wow fadeInUp"> Code on demand “allows client functionality to be extended by downloading and executing code in the form of applets or scripts. This simplifies clients by reducing the
+                                number of features required to be pre-implemented. It allows features to be downloaded after deployment and improves system extensibility. However, it also reduces
+                                visibility, and thus is only an optional constraint within REST”. </p>
+                            <p  class="wow fadeInUp"> I'm glad Mr. Fielding made this an optional constraint, especially in light of how technology has changed and continues to evolve. </p>
+                            <p  class="wow fadeInUp"> Applets downloaded onto a client for execution via HTTP requests are all but extinct since the advent of Apps via mobile phones and tablets. </p>
+                            <p  class="wow fadeInUp"> Another reason I'm glad this constraint is optional is that depending on the context, security, and privacy issues, the constraint may not be viable. </p>
+                            <p  class="wow fadeInUp mb--80"> However, what saddens me is how REST development has ignored this fundamental principle, and instead of having applications run on the client, they are running on the
+                                server, defeating the purpose of distributed processing. </p>
+                            <h2 class="title mb--30  wow fadeInUp">Conclusion</h2>
+                            <p  class="wow fadeInUp"> Distributed processing is the intent of this optional constraint, however, the industry has disguised the old CGI paradigm with URL pointers to applications running on
+                                the server and calling it REST. </p>
+                            <p  class="wow fadeInUp mb--80"> This is NOT REST and is NOT a principle of the REST architectural style. </p>
+                            <app-tyrone-showers-bio></app-tyrone-showers-bio>
+                            <div class="row wow fadeInUp">
+                                <div class="col"><a href="/blog/using-a-crm-to-increase-sales"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a> </div>
+                                <div class="col text-end"><a href="/blog/a-digital-marketing-strategy-in-a-recession"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i> </a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <div id="content" class="site-content">
-        <div id="primary" class="content-area">
-            <main id="main" class="site-main">
-                <section class="container-fluid page-block">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 page-content">
-                                <h2>Introduction</h2>
-                                <p> Like other promising technologies, I confidently state that REST will soon head to the technological graveyard. Why? The use of REST is based on opinions instead of
-                                    rules. I don't understand how REST turned into such a mishmash of divergent technologies when there is a well-documented thesis written on the subject. We are in an
-                                    era where loose interpretation of REST confuses companies trying to implement the architectural style. </p>
-                                <h3>REST</h3>
-                                <p> The REST technology leaders are dictating the market direction of REST on faulty material or hearsay. If only I had a nickel for every time someone said my
-                                    arguments on proper REST architecture are academic, I would be rich. When people mention REST API, I automatically know they have no clue about REST. The sad part
-                                    is that this term is repeated on site after site, blog after blog. </p>
-                                <p> Representational State Transfer Application Programming Interface </p>
-                                <p> Seriously? </p>
-                                <p> This ill-conceived grouping of acronyms, I predict, will bury REST. </p>
-                                <p> An architectural style developed initially for exploiting the Internet for data access turned into a mechanism for creating functional interfaces is a sure sign
-                                    that REST soon be extinct Technology extinction usually occurs when there is a complete misunderstanding of an architecture's intent. Unfortunately, REST is now
-                                    used as another buzz acronym to pad resumes. </p>
-                                <p> REST is simply an architectural style developed to transfer data in a usable fashion utilizing HTTP. </p>
-                                <p> The evidence of REST implementation lies in the verbs used and their usage similarity to the database domain. Create, Retrieve, Update, and Delete in the database
-                                    domain. POST, GET, PUT, and DELETE in the HTTP domain. </p>
-                                <p> How much more evidence is needed to convey that REST is for data, not interfaces and function calls? Nevertheless, market leaders force-fit REST as the new SOAP
-                                    (Simple Object Access Protocol). I surmise this is because most of the architects are former SOAP architects. The SOAP architects are using analogies they are most
-                                    familiar with – SOAP. </p>
-                                <p> SOAP is not REST. </p>
-                                <p> SOAP is functional. </p>
-                                <p> REST is data. </p>
-                                <p> Regrettably, we will never see implementations that reflect the academic argument because the market drivers have already dictated that REST is the new SOAP.
-                                    Consequently, REST extinction in 5 years or fewer is possible; unless the IT industry reevaluates its understanding of Roy Fielding's academic thesis as intended in
-                                    real-world applications. </p>
-                                <p> In 2000, a guy named Roy Thomas Fielding wrote a dissertation on Architectural Styles and the Design of Network-based Software Architectures. </p>
-                                <p> Part of the dissertation (Chapter 5) started to receive significant attention from software developers around 2008. This section of the dissertation was about how
-                                    to use standard web practices to access data representations over the Internet. </p>
-                                <p> One of the efforts was to emulate data (objects). Roy thought it made sense to use the Internet's URL hierarchal pattern (the slashes in a URL representing a path
-                                    to the web page or resource) to emulate inherent hierarchal data relationships. </p>
-                                <p> e.g. http://www.taliferro.com/corporate/images/logo.gif </p>
-                                <p> Chapter 5 of the thesis is now the new hot mobile and internet architectural style that seems to have many interpretations and misconceptions. </p>
-                                <p> You can't imagine how many arguments I've witnessed interpreting what Roy's thesis means. </p>
-                                <p> The misconceptions are so heated and nasty that some of the biggest and most recognizable companies have bastardized and misinterpreted the concepts. </p>
-                                <p> The interpretations of Roy's dissertation have become so convoluted that anyone with a Computer Science degree before 1990 would be thoroughly confused by just
-                                    looking at what the acronyms stood for - </p>
-                                <p> API (Application Programming Interface) and REST (Representational State Transfer) - and trying to draw a parallel on how they are being used today, how they seem
-                                    to be used interchangeably and how such a tight association has been formed. </p>
-                                <p> I'll try and clarify REST, how APIs and REST are not the same, how you should approach a REST project and some best practices for creating an extensible REST
-                                    infrastructure. </p>
-                                <p>
-                                <h3> Client Server </h3>
-                                <p> The first constraint that Roy Fielding put on REST was the client/server constraint. The client/server constraint separates the concern of processing instructions.
-                                    For example, computer systems operate more efficiently, focusing on specific tasks. </p>
-                                <p> In the client/server paradigm, the user interface is separate from where data resides and how the data should be processed. Thus a client focuses all computer
-                                    processing power on how the screen looks to a user and doesn't concern itself with the accuracy of the information it displays. </p>
-                                <h3> Stateless </h3>
-                                <p> When you type a web address in your browser, that address is a pointer of information. If you like the information you see in the web browser, chances are you want
-                                    to create a reference or a bookmark. The bookmark allows you to return to the same address in another period for the same information. </p>
-                                <p> The Internet consists of dynamic content and static content. </p>
-                                <p> Dynamic content is built on the fly when a user visits a URL. </p>
-                                <p> Static content is content that doesn't change (usually). </p>
-                                <p> This concept is essential to understand so you can grasp the idea of stateless. </p>
-                                <p> When a URL address (web/internet resource) is stateless, the address you are referencing is not dependent on any previous action. Stateless web resources can be
-                                    called at any time with the expectation that its current “state” is not reliant on any other activity. </p>
-                                <p> A dynamic web address is stateful and requires additional information from some previous action to understand what type of content to create. </p>
-                                <p> An excellent example of a stateful URL is an Internet shopping cart. When purchasing an item on the Internet, you enter your name, address, and payment associated
-                                    with an object. Once all the information is gathered a confirmation page displays. During each data entry screen, the information you put in must be passed from one
-                                    screen to the other. Otherwise, there would be no way of determining what you ordered or where to send the item. Thus, a stateful mechanism (a session) keeps your
-                                    information nicely organized so that as you proceed from one page to the next, the current “state” of the order process is known. </p>
-                                <p> In REST, a URL should be stateless. The web resource URL being asked for by your browser or some program does not require a session or any additional information to
-                                    access the information being requested. The web resource URL is static, meaning you always have the most current copy of data based on the never changing URL. </p>
-                                <h3> Cache </h3>
-                                <p> Another constraint Roy Fielding mentions is that the resource should be storable in a web browser or application program's cache. By being cacheable, the resource
-                                    can be bookmarked for later retrieval. </p>
-                                <p> The combination of a web resource being stateless and cacheable provides a benefit to programs and web browser to expedite processing, reduce read write conflicts,
-                                    reduce the reliance on an Internet connection, reduce bandwidth usage, reduce server load, make applications scalable which improves overall network efficiency.
-                                </p>
-                                <h3> Uniform Interface </h3>
-                                <p> A common doctrine among software development efforts is to have a standard interface. Architecture is simplified, and visibility between software and data is
-                                    enhanced. </p>
-                                <h3> Decoupling responsibilities encourages independence. </h3>
-                                <p> Today, developers don't want to accept decoupled responsibility and are unwilling accept degradation in efficiency. This trade-off is bastardizing REST and creating
-                                    these one and two off REST scenarios, which make nothing more than a server application with a URL pointer. </p>
-                                <p> As Roy Fielding states, “In order to obtain a uniform interface, multiple architectural constraints are needed to guide the behavior of components. 5.1.5 Uniform
-                                    Interface.” </p>
-                                <h3> Layered System </h3>
-                                <p> The layered architecture allows software designers to encapsulate code and logic to a specific domain, thus isolating the developers and users from the underlying
-                                    complexity of software. Layering software does have its drawbacks in that latency begins to creep in, slowing down once nimble systems. </p>
-                                <p> When layers are used, the effort is to encapsulate legacy software, isolating deeper layers and legacy clients. This layering simplifies software collections and
-                                    systems by moving infrequently used responsibilities to a standard broker. </p>
-                                <p> A brokering mechanism is used to improve system scalability. Brokering provides load balancing across networks. </p>
-                                <h3> Code On Demand </h3>
-                                <p> The last constraint Roy Fielding speaks of is the optional code on demand concept. </p>
-                                <p> Code on demand “allows client functionality to be extended by downloading and executing code in the form of applets or scripts. This simplifies clients by reducing
-                                    the number of features required to be pre-implemented. It allows features to be downloaded after deployment and improves system extensibility. However, it also
-                                    reduces visibility, and thus is only an optional constraint within REST”. </p>
-                                <p> I'm glad Mr. Fielding made this an optional constraint, especially in light of how technology has changed and continues to evolve. </p>
-                                <p> Applets downloaded onto a client for execution via HTTP requests are all but extinct since the advent of Apps via mobile phones and tablets. </p>
-                                <p> Another reason I'm glad this constraint is optional is that depending on the context, security, and privacy issues, the constraint may not be viable. </p>
-                                <p> However, what saddens me is how REST development has ignored this fundamental principle, and instead of having applications run on the client, they are running on
-                                    the server, defeating the purpose of distributed processing. </p>
-                                <h2>Conclusion</h2>
-                                    <p> Distributed processing is the intent of this optional constraint, however, the industry has disguised the old CGI paradigm with URL pointers to applications running
-                                    on the server and calling it REST. </p>
-                                <p> This is NOT REST and is NOT a principle of the REST architectural style. </p>
-                                <div class="row">
-                                    <div class="col"><a href="/blog/using-a-crm-to-increase-sales"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a> </div>
-                                    <div class="col text-end"><a href="/blog/a-digital-marketing-strategy-in-a-recession"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i> </a></div>
-                                </div>    
-
-                            </div>
-                        </div> <!-- .row -->
-                    </div> <!-- .container -->
-                </section>
-            </main>
-        </div> <!-- #primary -->
-    </div> <!-- #content -->
-    <!-- Start Footer -->
-    <app-footer></app-footer>
-    <!-- End Footer -->
+    </section>
+    <!--=====================================-->
+    <!--=     Call To Action Area Start     =-->
+    <!--=====================================-->
+    <!--=====================================-->
+    <!--=        Footer Area Start       	=-->
+    <!--=====================================-->
+    <app-footer-area></app-footer-area>
+    <!--=====================================-->
+    <!--=       Offcanvas Menu Area       	=-->
+    <!--=====================================-->
+    <app-off-canvas-menu></app-off-canvas-menu>
 </div>

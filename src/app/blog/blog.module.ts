@@ -23,6 +23,16 @@ import { Post18Component } from './post18/post18.component';
 import { Post19Component } from './post19/post19.component';
 import { Post20Component } from './post20/post20.component';
 import { Post14Component } from './post14/post14.component';
+import { HeaderAreaLightComponent } from './header-area-light/header-area-light.component';
+import { BreadCrumbLightComponent } from './bread-crumb-light/bread-crumb-light.component';
+import { FooterAreaComponent } from './footer-area/footer-area.component';
+import { OffCanvasMenuComponent } from './off-canvas-menu/off-canvas-menu.component';
+import { TyroneShowersBioComponent } from './tyrone-showers-bio/tyrone-showers-bio.component';
+import { Post21Component } from './post21/post21.component';
+import { Post22Component } from './post22/post22.component';
+import { Post23Component } from './post23/post23.component';
+import { Post24Component } from './post24/post24.component';
+import { Post25Component } from './post25/post25.component';
 
 
 
@@ -49,7 +59,17 @@ import { Post14Component } from './post14/post14.component';
     Post18Component,
     Post19Component,
     Post20Component,
-    Post14Component
+    Post14Component,
+    HeaderAreaLightComponent,
+    BreadCrumbLightComponent,
+    FooterAreaComponent,
+    OffCanvasMenuComponent,
+    TyroneShowersBioComponent,
+    Post21Component,
+    Post22Component,
+    Post23Component,
+    Post24Component,
+    Post25Component
   ],
   imports: [
     CommonModule,

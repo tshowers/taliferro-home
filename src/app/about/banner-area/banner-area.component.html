@@ -1,0 +1,54 @@
+<!--=====================================-->
+<!--=        Banner Area Start         =-->
+<!--=====================================-->
+<section class="banner banner-style-5" id="op-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xl-7">
+                <div class="banner-content">
+                    <h1 class="title sal-animate wow fadeInUp">SaaS and Services</h1>
+                    <div class="sal-animate  wow fadeInUp">
+                        <a href="#op-portfolio" class="axil-btn btn-fill-white btn-large">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-5 sal-animate wow fadeInUp">
+                <div *ngIf="message">
+                    <div class="alert alert-success text-center" role="alert"> {{message}} </div>
+                </div>
+                <div class="banner-form" *ngIf="!message">
+                    <div class="contact-form-box shadow-box">
+                        <h3 class="title">Free Infrastructure Analysis</h3>
+                        <form #dataForm="ngForm" (ngSubmit)="onSubmit();dataForm.reset();" class="axil-contact-form">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input [(ngModel)]="contact.firstName" id="firstName" name="firstName" autocomplete="off" type="text" class="form-control" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input [(ngModel)]="contact.lastName" id="lastName" name="lastName" autocomplete="off" type="text" class="form-control" placeholder="Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input [(ngModel)]="email.emailAddress" id="emailAddress" type="email" class="form-control" name="emailAddress" placeholder="example@mail.com"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" autocomplete="off" required>
+                            </div>
+                            <div class="form-group mb--40">
+                                <label>Website</label>
+                                <input [(ngModel)]="contact.website" id="website" type="text" class="form-control" name="website" placeholder="https://wwww.example.com" autocomplete="off" required>
+                            </div>
+                            <div class="form-group mb--40">
+                                <re-captcha (resolved)="resolved($event)" siteKey="6LcxPI8hAAAAADx9HjHU-dhIeIYp69oTdxms5esv"></re-captcha>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group" [hidden]="!captcha">
+                                <button type="submit" style="cursor:pointer" class="axil-btn btn-borderd btn-fluid btn-primary" name="submit-btn" [disabled]="!dataForm.form.valid">Submit</button>
+                            </div>
+                            <input type="hidden" class="form-control" name="contact-message" value="Null">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

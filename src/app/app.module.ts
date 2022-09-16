@@ -18,6 +18,24 @@ import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 import { DataService } from './services/data.service';
 import { ReturnPolicyComponent } from './return-policy/return-policy.component';
+import { AboutComponent } from './about/about.component';
+import { ModalBoxComponent } from './about/modal-box/modal-box.component';
+import { PreloaderComponent } from './about/preloader/preloader.component';
+import { HeaderAreaComponent } from './about/header-area/header-area.component';
+import { BannerAreaComponent } from './about/banner-area/banner-area.component';
+import { ServiceAreaComponent } from './about/service-area/service-area.component';
+import { ProductAreaComponent } from './about/product-area/product-area.component';
+import { TestimonialAreaComponent } from './about/testimonial-area/testimonial-area.component';
+import { CounterAreaComponent } from './about/counter-area/counter-area.component';
+import { BlogAreaComponent } from './about/blog-area/blog-area.component';
+import { ContactAreaComponent } from './about/contact-area/contact-area.component';
+import { CallToActionComponent } from './about/call-to-action/call-to-action.component';
+import { FooterAreaComponent } from './about/footer-area/footer-area.component';
+import { ProjectAreaComponent } from './about/project-area/project-area.component';
+import { HeaderAreaLightComponent } from './about/header-area-light/header-area-light.component';
+import { BreadCrumbLightComponent } from './about/bread-crumb-light/bread-crumb-light.component';
+import { OffCanvasMenuComponent } from './about/off-canvas-menu/off-canvas-menu.component';
+import { VideoAreaComponent } from './about/video-area/video-area.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +45,25 @@ import { ReturnPolicyComponent } from './return-policy/return-policy.component';
     PrivacyPolicyComponent,
     TermsComponent,
     TyroneShowersComponent,
-    ReturnPolicyComponent
+    ReturnPolicyComponent,
+    AboutComponent,
+    ModalBoxComponent,
+    PreloaderComponent,
+    HeaderAreaComponent,
+    BannerAreaComponent,
+    ServiceAreaComponent,
+    ProductAreaComponent,
+    TestimonialAreaComponent,
+    CounterAreaComponent,
+    BlogAreaComponent,
+    ContactAreaComponent,
+    CallToActionComponent,
+    FooterAreaComponent,
+    ProjectAreaComponent,
+    HeaderAreaLightComponent,
+    BreadCrumbLightComponent,
+    OffCanvasMenuComponent,
+    VideoAreaComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +74,7 @@ import { ReturnPolicyComponent } from './return-policy/return-policy.component';
     RecaptchaModule,
     NgwWowModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent, data: { title: 'Home' }},
+      {path: '', component: AboutComponent, data: { title: 'Home' }},
       {path: 'privacy-policy', component: PrivacyPolicyComponent, data: { title: 'Privacy Policy' }},
       {path: 'terms-of-service', component: TermsComponent, data: { title: 'Terms of Service' }},
       {path: 'refund-policy', component: ReturnPolicyComponent, data: { title: 'Return Policy' }},
