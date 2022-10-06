@@ -33,6 +33,12 @@ import { Post22Component } from './post22/post22.component';
 import { Post23Component } from './post23/post23.component';
 import { Post24Component } from './post24/post24.component';
 import { Post25Component } from './post25/post25.component';
+import { ListComponent } from './list/list.component';
+import { Post26Component } from './post26/post26.component';
+import { Post27Component } from './post27/post27.component';
+import { Post28Component } from './post28/post28.component';
+import { Post29Component } from './post29/post29.component';
+import { Post30Component } from './post30/post30.component';
 
 
 
@@ -69,11 +75,27 @@ import { Post25Component } from './post25/post25.component';
     Post22Component,
     Post23Component,
     Post24Component,
-    Post25Component
+    Post25Component,
+    ListComponent,
+    Post26Component,
+    Post27Component,
+    Post28Component,
+    Post29Component,
+    Post30Component
   ],
   imports: [
     CommonModule,
     BlogRoutingModule
+  ],
+  exports: [
+    FooterComponent,
+    HeaderComponent,
+    HeaderAreaLightComponent,
+    BreadCrumbLightComponent,
+    FooterAreaComponent,
+    OffCanvasMenuComponent,
+    TyroneShowersBioComponent,
+
   ]
 })
 export class BlogModule { }

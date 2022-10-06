@@ -1,0 +1,143 @@
+<a href="#main-wrapper" id="backto-top" aria-label="Back to Top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<!-- Preloader Start Here -->
+<div id="preloader"></div>
+<!-- Preloader End Here -->
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-bread-crumb-light [title]="'API Security Checklist'"></app-bread-crumb-light>
+    <section class="section-padding privacy-policy-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="single-blog">
+                        <div class="single-blog-content">
+                            <div class="post-thumbnail">
+                                <img class="rounded img-fluid wow fadeInUp" src="/assets/images/blog/api-security-checklist.webp" alt="API Security Checklist">
+                            </div>
+                            <div class="author">
+                                <div class="author-thumb">
+                                    <img class="img-thumbnail wow fadeInUp" src="assets/media/blog/author-1.webp" alt="Tyrone Showers">
+                                </div>
+                                <div class="info">
+                                    <h6 class="author-name">Tyrone Showers</h6>
+                                    <ul class="blog-meta list-unstyled">
+                                        <li>Oct 3, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="wow fadeInUp">
+                                Below is a compiled list of best practices for securing APIs that I have picked over the last decade. I use this as a quick reference checklist that I can refer to when assessing an API. I used to have this in my Apple notes, but I think it's better here.
+                            </p>
+                            <ul class="wow fadeInUp mb--80">
+                                <li> Check certificate revocation on every call. </li>
+                                <li> A trusted PKI issues certificates. </li>
+                                <li> No export-grade encryption algorithms. </li>
+                                <li> All communications from the network's edge to backends are secured using the most recent version of mutual TLS with perfect forward secrecy and a modern cipher
+                                    set. </li>
+                                <li> All communications to the network's edge are secured using the most recent version of TLS with perfect forward secrecy and a modern cipher set. </li>
+                                <li> Authentication should include a set of claims. </li>
+                                <li> Use the API Gateway to validate the Bearer token. </li>
+                                <li> Ensure the API Gateway does not cache. </li>
+                                <li> All calling applications provide an API key in the header. </li>
+                                <li> Use an API Gateway for handling authentication. </li>
+                                <li> Use an authentication method to authenticate access to all endpoints. </li>
+                                <li> Use OAuth 2.0 instead of 1.0. </li>
+                                <li> Certificate pinning or another suitable certificate protection method should be employed. </li>
+                                <li> Ensure private keys are protected. </li>
+                                <li> Check certificates uniquely identify a system </li>
+                                <li> Check the certificate against the presented server names for every call. </li>
+                                <li> Check the certificate for the validity period on every call. </li>
+                                <li> Use encrypted, signed bearer tokens JWTs. </li>
+                                <li> Ensure the API Gateway transmits claims to backend business logic. </li>
+                                <li> The API Gateway is the only authorized caller to backend systems. </li>
+                                <li> Guard for remote system impersonators. </li>
+                                <li> Ensure the API delivery stack validates the identity of its caller. </li>
+                                <li> Ensure the API Gateway validates JWTs. </li>
+                                <li> Return 401 status for the authentication failure. </li>
+                                <li> The API Gateway evaluates the calling application to authorize access to an endpoint. </li>
+                                <li> Have the API Gateway evaluate Bearer token scope. </li>
+                                <li> Use authorization that requires domain knowledge below the API Gateway. </li>
+                                <li> The API Gateway provides claims to underlying systems to perform authorization. </li>
+                                <li> Authorization results are not cached. </li>
+                                <li> Backend systems should validate that the provider of a claim set is authorized. </li>
+                                <li> If OAuth, users can revoke tokens without administrator assistance. </li>
+                                <li> Return 403 for OAuth authorization failure. </li>
+                                <li> Ensure authorization occurs early - before any business logic. </li>
+                                <li> All code paths should require authorization. </li>
+                                <li> Use scope claims to constrain the activities of a caller. </li>
+                                <li> Sensitive information should not be visible in paths. </li>
+                                <li> Sensitive information should not be visible in headers. </li>
+                                <li> Use correlation keys requested from clients. </li>
+                                <li> If a client does not provide a correlation key, have the API Gateway create one. </li>
+                                <li> Encrypt context. </li>
+                                <li> Verify content types in request bodies. </li>
+                                <li> Reject requests that do not send accepted content. </li>
+                                <li> Content is verified to be syntactically correct. </li>
+                                <li> Verify content against a schema. </li>
+                                <li> Request bodies are not directly bound to data objects. </li>
+                                <li> Ignore properties, headers, and content if the API does not expect it. </li>
+                                <li> Accept binary objects as base64 encoded strings. </li>
+                                <li> Caller and endpoints should throttle. </li>
+                                <li> Return errors in a consistent structure. </li>
+                                <li> Do not return stack traces. </li>
+                                <li> Response headers or bodies should not return server and platform names. </li>
+                                <li> Do not return unnecessary information about the nature of an error. </li>
+                                <li> Error responses should only include sufficient information for a consumer to know how to correct their request. </li>
+                                <li> Sensitive information should not be visible in response headers. </li>
+                                <li> Use the no-cache directive on API endpoints. </li>
+                                <li> Use Cache-Control headers to identify stale information. </li>
+                                <li> Disable caching. </li>
+                                <li> Redact sensitive information. </li>
+                                <li> Enable CORS for APIs running a browser. </li>
+                                <li> Return HSTS headers to enforce upgrades to HTTPS on all endpoints. </li>
+                                <li> Verify headers against a schema. </li>
+                                <li> Responses should not contain sensitive data. </li>
+                                <li> Parameterize SQL queries. </li>
+                                <li> Do not use dynamic SQL in stored procedures. </li>
+                                <li> JSON is not evaluated directly as JavaScript. </li>
+                                <li> Do not execute binary code or script code in the body. </li>
+                                <li> Log security events into a centralized security event system. </li>
+                                <li> Convert exceptions to standardized errors. </li>
+                                <li> All type shapes in the API's contract definition have clearly defined and explicit descriptions and validation patterns. </li>
+                                <li> Have information security personnel as part of API product teams. </li>
+                                <li> Test APIs for security flaws with penetration testing tools. </li>
+                                <li> Test APIs with static code analysis tools. </li>
+                                <li> Use managed code for API development. </li>
+                                <li> Patch critical vulnerabilities immediately. </li>
+                                <li> Use network isolation techniques. </li>
+                                <li> Check sudden changes in API usage. </li>
+                                <li> Only appropriate personnel can disable an API. </li>
+                                <li> Only appropriate personnel can disable access to APIs by applications. </li>
+                                <li> Mark data with a security classification to identify its appropriate usage. </li>
+                                <li> As a rule, developers cannot modify code in any environment without following the standard code progression path. </li>
+                                <li> Use automated tests. </li>
+                                <li> Record and track technical debt. </li>
+                                <li> Non-production endpoints should not be accessible to API consumers. Create an API inventory for review and analysis. </li>
+                            </ul>
+                            <app-tyrone-showers-bio></app-tyrone-showers-bio>
+                            <div class="row wow fadeInUp">
+                                <div class="col"><a href="/blog/oct-2022/restful-checklist"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                        Previous</a>
+                                </div>
+                                <div class="col text-end"><a href="#" aria-label="Next"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i> </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================-->
+    <!--=     Call To Action Area Start     =-->
+    <!--=====================================-->
+    <!--=====================================-->
+    <!--=        Footer Area Start       	=-->
+    <!--=====================================-->
+    <app-footer-area></app-footer-area>
+    <!--=====================================-->
+    <!--=       Offcanvas Menu Area       	=-->
+    <!--=====================================-->
+    <app-off-canvas-menu></app-off-canvas-menu>
+</div>

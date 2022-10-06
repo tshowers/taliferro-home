@@ -25,8 +25,16 @@ import { Post22Component } from './post22/post22.component';
 import { Post23Component } from './post23/post23.component';
 import { Post24Component } from './post24/post24.component';
 import { Post25Component } from './post25/post25.component';
+import { Post26Component } from './post26/post26.component';
+import { Post27Component } from './post27/post27.component';
+import { Post28Component } from './post28/post28.component';
+import { Post29Component } from './post29/post29.component';
+import { Post30Component } from './post30/post30.component';
+import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
+    { path: '', component: ListComponent, data: { title: 'Blog Postings' } },
+    { path: 'oct-2022', loadChildren: () => import('../blog2/blog2.module').then(m => m.Blog2Module)},
     { path: 'dont-let-your-web-store-turn-into-a-desert', component: Post1Component, data: { title: 'Dont let your web store turn into a desert' } },
     { path: 'is-your-website-just-a-business-expense-or-is-it-making-you-money', component: Post2Component, data: { title: 'Is your website just a business expense or is it making you money' } },
     { path: 'oh-how-I-hate-passwords-and-2-factor-authentication', component: Post3Component, data: { title: 'Oh how I\'ve grown to hate passwords and 2-factor authentication' } },
@@ -40,7 +48,7 @@ const routes: Routes = [
     { path: 'a-digital-marketing-strategy-in-a-recession', component: Post11Component, data: { title: 'A Digital Marketing strategy in a recession' } },
     { path: 'going-from-website-to-web-business', component: Post12Component, data: { title: 'Going from website to web business' } },
     { path: 'crm-meaning-marketing', component: Post13Component, data: { title: 'What does a CRM Meaning to Marketing' } },
-    { path: 'how-to-lead-teams-to-develop-and-deliver-a-fantastic-product-our-customers-love-and-cant-live-without', component: Post14Component, data: { title: 'How to lead teams to develop and deliver a fantastic product our customers love and cant live without' } },
+    { path: 'how-to-lead-teams-to-develop-and-deliver-a-fantastic-product-our-customers-love-and-cant-live-without', component: Post14Component, data: { title: 'How to lead teams to develop and deliver a fantastic product our customers love and can\'t live without' } },
     { path: 'so-you-want-a-technology-thought-leader-well-here-are-some-thoughts', component: Post15Component, data: { title: 'So you want a technology thought leader well here are some thoughts' } },
     { path: 'how-to-improve-and-innovate-dev-ops-environments-and-ci-cd-processes', component: Post16Component, data: { title: 'How to improve and innovate dev ops environments and CI/CD processes' } },
     { path: 'the-top-five-reasons-our-laboratory-information-system-is-the-best', component: Post17Component, data: { title: 'The Top Five Reasons Our Laboratory Information System is the Best' } },
@@ -48,10 +56,15 @@ const routes: Routes = [
     { path: 'how-you-should-approach-a-stranger-about-your-product-or-service', component: Post19Component, data: { title: 'How you should approach a stranger about your product or service' } },
     { path: 'how-to-turn-your-fashion-and-apparel-online-store-into-a-sales-juggernaut', component: Post20Component, data: { title: 'How to turn your fashion and apparel online store into a sales juggernaut' } },
     { path: 'how-to-make-your-technology-infrastructure-future-proof', component: Post21Component, data: { title: 'How to make your technology infrastructure future proof' } },
-    // { path: '', component: Post20Component, data: { title: '' } },
-    // { path: '', component: Post20Component, data: { title: '' } },
-    // { path: '', component: Post20Component, data: { title: '' } },
-    // { path: '', component: Post20Component, data: { title: '' } },
+    { path: 'why-you-might-want-to-use-our-crm-before-you-send-cold-call-emails-or-messages', component: Post22Component, data: { title: 'Why you might want to use our CRM before you send cold call emails or messages' } },
+    { path: 'we-are-the-best-it-services-firm-in-seattle', component: Post23Component, data: { title: 'We\'re the best IT Services firm in Seattle' } },
+    { path: 'my-experience-with-the-google-business-profile', component: Post24Component, data: { title: 'My Experience with the Google Business Profile' } },
+    { path: 'how-to-create-the-perfect-e-commerce-shopping-experience', component: Post25Component, data: { title: 'How to create the perfect e-commerce shopping experience' } },
+    { path: 'whats-the-benefit-of-a-customer-relationship-manager', component: Post26Component, data: { title: 'What\'s the benefit of a Customer Relationship Manager (CRM)' } },
+    { path: 'what-makes-a-good-laboratory-information-system', component: Post27Component, data: { title: 'What makes a good Laboratory Information System' } },
+    { path: 'social-media-marketing-requires-patience', component: Post28Component, data: { title: 'Social Media Marketing (SSM) requires patience, especially organic' } },
+    { path: 'how-to-get-your-client-a-promotion', component: Post29Component, data: { title: 'How to get your client a promotion' } },
+    { path: 'heres-how-you-can-achieve-e-commerce-excellence', component: Post30Component, data: { title: 'Here\'s how you can achieve e-commerce excellence' } },
 ];
 
 

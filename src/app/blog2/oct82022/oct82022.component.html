@@ -1,0 +1,191 @@
+<a href="#main-wrapper" id="backto-top" aria-label="Back to Top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<!-- Preloader Start Here -->
+<div id="preloader"></div>
+<!-- Preloader End Here -->
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-bread-crumb-light [title]="'Architectural Cheat Sheet'"></app-bread-crumb-light>
+    <section class="section-padding privacy-policy-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="single-blog">
+                        <div class="single-blog-content">
+                            <div class="post-thumbnail">
+                                <img class="rounded img-fluid wow fadeInUp" src="/assets/images/blog/architectural-cheat-sheet.webp"
+                                    alt="Are you crippling your Agile team with Procedure?">
+                            </div>
+                            <div class="author">
+                                <div class="author-thumb">
+                                    <img class="img-thumbnail wow fadeInUp" src="assets/media/blog/author-1.webp" alt="Tyrone Showers">
+                                </div>
+                                <div class="info">
+                                    <h6 class="author-name">Tyrone Showers</h6>
+                                    <ul class="blog-meta list-unstyled">
+                                        <li>Oct 8, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 class="wow fadeInUp"> Introduction </h2>
+                            <p class="wow fadeInUp"> This architectural cheat sheet guides architects who are attempting to architect a system. A Technical Architecture is the layer of system software
+                                and extensions upon which an application are built. Architecture is broken down into development, execution, and operations. </p>
+                            <p class="wow fadeInUp"> This cheat sheet focuses on Execution Architecture primarily as it relates to the physical architecture, code management, and build processes. </p>
+                            <p class="wow fadeInUp"> Architecture will be a combination of Development processes and runtime support as defined by the company's System Management team. Architectural
+                                considerations are: </p>
+                            <ul class="wow fadeInUp mb--80">
+                                <li>Summary of the Application</li>
+                                <li>An overview of how specific architectural issues are handled</li>
+                                <li>Guidelines for selecting a specific technical approach where alternatives exist</li>
+                            </ul>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Architecture Principle Context </h3>
+                            <ul class="wow fadeInUp mb--80">
+                                <li>Time-based </li>
+                                <li>Granularity</li>
+                                <li>Don't break subscribers</li>
+                                <li>Horizontal data growth</li>
+                                <li>Decoupling</li>
+                                <li>State rebuild</li>
+                                <li>Temporal queries </li>
+                                <li>Data consistency</li>
+                                <li>Serve only data needed by client </li>
+                                <li>Data availability </li>
+                                <li>Materialized View Pattern</li>
+                                <li>Circuit Breaker Pattern</li>
+                                <li>API Gateway</li>
+                            </ul>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Logical Architecture </h3>
+                            <p class="wow fadeInUp"> A diagram should indicate the critical capabilities of an Application Architecture. These capabilities determine what applications are necessary to
+                                deliver on the business vision. This consists of a summary of the types and numbers of assets, data requirements, asset characteristics, and so on, for each
+                                Application. </p>
+                            <p class="wow fadeInUp"> A middleware layer describes the various mechanisms by which consumers access data. </p>
+                            <p class="wow fadeInUp"> The Data layer can be described separately as part of the Data Architecture or as part of the application architecture. </p>
+                            <p class="wow fadeInUp"> The discussion of the Data Architecture should include a description of the enterprise data access methods, direct and replicated local data access
+                                methods, and guidelines regarding data location. </p>
+                            <p class="wow fadeInUp mb--80"> An integration plan provides the data access method used. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Single Page Application Considerations </h3>
+                            <p class="wow fadeInUp"> Typically, best practice development in the SPA world aligns with an aggregate approach instead of a series of rows. The consequence of querying a
+                                row/series in a SPA application has a negative effect because the query only needs a subset of data from some entities, such as a summary of services for several
+                                microservices without all of the service details. If the SPA must extract all of the data for the relevant entities to obtain the required information, it will
+                                negatively impact the user experience. A best practice for SPA applications is to generate, in advance, a view that materializes the data in a format suited to the
+                                required component. </p>
+                            <p class="wow fadeInUp mb--80"> The view should only contain the data required by a particular SPA component. Materialized views can include values from calculations or
+                                other data items. You can even optimize the materialized view for just a single query. If the source changes, the view can be updated to include the new information
+                                automatically via a cloud function/database trigger. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> State and Session Context Management </h3>
+                            <p class="wow fadeInUp"> Context management refers to storing and retrieving information entered by the user across a sequence of screen exchanges or page submissions.
+                                Specifically, provide facilities that enable an application programmer to : </p>
+                            <ul class="wow fadeInUp">
+                                <li> Store data to be displayed on the user's screen </li>
+                                <li> Retrieve user input </li>
+                                <li> Store temporary data that should persist across screens </li>
+                            </ul>
+                            <p class="wow fadeInUp"> Consider a context framework that gives developers access to context through a single interface. Examples of context components are: </p>
+                            <ul class="wow fadeInUp mb--80">
+                                <li> Client side state component. This component stores the temporary state in an HTML cookie on the client. The component is rebuilt at each request. The component is
+                                    stateless and is suitable for applications with high scalability requirements. It is unsuitable if a large amount of temporary data is stored. </li>
+                                <li> Temporary data store state component. This component uses stores the temporary state data in the cloud. </li>
+                                <li> In-memory state component. A component stores the temporary state in the cloud's memory. The component must be stateful between user pages, and so it is stored in
+                                    a session object. This component is unsuitable if the Application requires a high level of scalability since the cloud stores the user information, and subsequent
+                                    client requests must be directed at the same Application. </li>
+                            </ul>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Environments </h3>
+                            <p class="wow fadeInUp"> A project's technical architecture can comprise multiple environments. These environments are usually integration, staging, and production. Staging
+                                is not an active environment but is designed to mirror the production environment and assume its activities for real-world testing. </p>
+                            <p class="wow fadeInUp"> The cloud provides redundancy and failover capabilities through a configuration setup. An architecture should empower developers to assemble new
+                                business applications that combine functionality from multiple systems. A well-architected system should meet the challenges of: </p>
+                            <ul class="wow fadeInUp mb--80">
+                                <li> Availability </li>
+                                <li> Data Management </li>
+                                <li> Management and Monitoring </li>
+                                <li> Performance and Scalability </li>
+                                <li> Resiliency </li>
+                                <li> Security </li>
+                            </ul>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> The Virtual Network </h3>
+                            <p class="wow fadeInUp mb--80"> Establish a virtual network to handle middleware execution and resource retrieval. All the resources communicate outbound to the internet
+                                and inbound with cloud components. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Data Private Subnet </h3>
+                            <p class="wow fadeInU mb--80p"> Within the virtual network, there can be a dedicated data subnet. The advantage to breaking the data and app environment up into a subnet is
+                                that the subnet allows the division of one network into logical subnetworks, separating data duties from middleware and web resource duties. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> App Environment Subnet </h3>
+                            <p class="wow fadeInUp mb--80"> An app environment subnet is responsible for all business logic, web service, and resource access. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Active Directory </h3>
+                            <p class="wow fadeInUp mb--80"> If utilizing Active Directory, a component can serve as an identity management service and filter applications' access by enforcing security
+                                rules. In addition, the AD service can facilitate Single Sign On (SSO). </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Network Security Groups (NSG) </h3>
+                            <p class="wow fadeInUp mb--80"> NSGs filter network traffic to and from resources in a virtual network. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Data Factory </h3>
+                            <p class="wow fadeInUp mb--80"> A Data Factory will issue custom commands to extract data from external sources. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Data Lake </h3>
+                            <p class="wow fadeInUp mb--80"> A Data Lake can work in conjunction with a storage blob for data that is structured, imported through a batch process, and used for
+                                streaming analytics and machine learning. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Data Store </h3>
+                            <p class="wow fadeInUp mb--80"> DSs can be used as a repository for big data analytics workflow, either unstructured, semi-structured, or structured data. Automatically
+                                replicates for unexpected hardware failures and has unlimited size and no limits to scale. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Backup Vault </h3>
+                            <p class="wow fadeInUp mb--80"> Works as a cloud-to-cloud implementation where cloud-based VMs and data can be backed-up to the Backup Vault without disrupting services.
+                            </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Virtual Machine </h3>
+                            <p class="wow fadeInUp mb--80"> Virtual machines can act as gateways to extract data from external data stores. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Data Bricks </h3>
+                            <p class="wow fadeInUp mb--80"> It can provide the service necessary to harness all the data collected and apply data science to the acquired data. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Storage Blob </h3>
+                            <p class="wow fadeInUp mb--80"> If there is data extraction from many systems, the data can grow exponentially. The data is possibly unstructured, or the information is in
+                                a binary format. A blob stores the data and can be used for analysis by other services. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Machine Learning Workspaces </h3>
+                            <p class="wow fadeInUp mb--80"> Data scientists use the machine learning workspace to conduct experiments on the data. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> SQL database </h3>
+                            <p class="wow fadeInUp mb--80"> Use an SQL database to create custom data tables, enforce referential integrity, and run necessary stored procedures to generate the data
+                                for UI needs. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> WebApp </h3>
+                            <p class="wow fadeInUp mb--80"> The only difference between the WepApp and an API App is that the WebApp does not contain a defined interface. The WepApp is usually the
+                                nodejs portion of a project. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> API App </h3>
+                            <p class="wow fadeInUp mb--80"> The middleware (with interfaces) contains the business logic that returns the data. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Security Management </h3>
+                            <p class="wow fadeInU mb--80p"> The purpose of the Security Approach is to provide a consistent infrastructure for ensuring that only authorized users can access web
+                                services and that those users can only access the data pertinent to their function. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> CI / CD considerations </h3>
+                            <ul class="wow fadeInU mb--80p">
+                                <li> Define and agree on release and deployment with customers/stakeholders </li>
+                                <li> Ensure the release consists of related assets and compatible service components </li>
+                                <li> Ensure integrity of release and its components </li>
+                                <li> Ensure release is recorded accurately in the configuration management system </li>
+                                <li> Ensure release is tracked, installed, tested, verified, and uninstalled or backed out </li>
+                                <li> Manage change during release and deployment </li>
+                                <li> Address deviations, risks, and issues related to new features or changes </li>
+                                <li> Ensure a process for knowledge transfer optimizes and supports business activities </li>
+                                <li> Ensure skills and knowledge are transferred to operations and support staff </li>
+                            </ul>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Testing Considerations </h3>
+                            <p class="wow fadeInUp"> Code is stamped and frozen, and this code version is pushed to an integration environment where all code is tested as a single unit. Once bugs are
+                                fixed, each team pushes the revised code to the source control repository. The code is stamped with a minor version change and moved to the integration server. </p>
+                            <p class="wow fadeInUp"> If there are no bugs, the release manager reviews the results with the product owner, then pushes the code to a staging server. </p>
+                            <p class="wow fadeInUp mb--80p"> A QA team performs quality acceptance testing on the code, testing for bugs, performance, and user story match. The QA team sends a bug
+                                report (if applicable) back to the development team for bug fixes. Each development team reviews the QA report and fixes bugs found in staging. </p>
+                            <app-tyrone-showers-bio></app-tyrone-showers-bio>
+                            <div class="row wow fadeInUp">
+                                <div class="col"><a href="/blog/oct-2022/how-to-choose-a-custom-website-development-company"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+                                </div>
+                                <div class="col text-end"><a href="/blog/oct-2022/using-the-lighthouse-google-developer-tool-to-measure-your-websites-performance" aria-label="Next"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i> </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================-->
+    <!--=     Call To Action Area Start     =-->
+    <!--=====================================-->
+    <!--=====================================-->
+    <!--=        Footer Area Start       	=-->
+    <!--=====================================-->
+    <app-footer-area></app-footer-area>
+    <!--=====================================-->
+    <!--=       Offcanvas Menu Area       	=-->
+    <!--=====================================-->
+    <app-off-canvas-menu></app-off-canvas-menu>
+</div>

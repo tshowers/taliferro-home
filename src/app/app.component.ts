@@ -30,7 +30,7 @@ export class AppComponent implements OnInit, OnDestroy {
         mergeMap((route) => route.data))
       .subscribe((event) => {
         this._wowService.init();
-        this._pageTitle = environment.COMPANY_NAME + ' - ' + event['title'];
+        this._pageTitle = event['title'] + ' - ' + environment.COMPANY_NAME;
         setTimeout(() => { this.setPageTitle() }, 1000);
       });
   }

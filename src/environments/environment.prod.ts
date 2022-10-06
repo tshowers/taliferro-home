@@ -7,7 +7,8 @@ export const environment = {
     projectId: "taliferro-de66f",
     storageBucket: "taliferro-de66f.appspot.com",
     messagingSenderId: "353334442276",
-    appId: "1:353334442276:web:45b043204cc83aa7725bb1"
+    appId: "1:353334442276:web:45b043204cc83aa7725bb1",
+    measurementId: "G-ZH2TKFHVZ7"
   },
   CARTS: "carts",
   SAVED_CARTS: "saved-carts",
@@ -24,5 +25,5 @@ export const environment = {
   LOGO_PATH: "logo",
   FILE_PATH: "files",
   RESULTS_PATH: "results",
-  COMPANY_NAME: 'Taliferro Group'
+  COMPANY_NAME: 'Taliferro'
 };

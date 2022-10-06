@@ -14,29 +14,57 @@
                         <div class="d-block d-lg-none">
                             <div class="mobile-nav-header">
                                 <div class="mobile-nav-logo">
-                                    <a routerLink="/"  style="color:black">Taliferro Group
+                                    <a routerLink="/" aria-label="Home" style="color:black">Taliferro Group
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <ul class="mainmenu" id="onepagenav">
                             <li class="">
-                                <a href="/#op-home">Home</a>
+                                <a href="/#op-home" aria-label="Home">Home</a>
                             </li>
                             <li class="">
-                                <a href="/#op-service">Services</a>
+                                <a href="/#op-service" aria-label="Services">Services</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="/#op-portfolio" aria-label="Products">Products</a>
+                                <ul class="axil-submenu">
+                                    <li><a href="https://crm.taliferro.com"><b>Customer Relationship Management</b> </a></li>
+                                    <li><a href="https://passwordless.taliferro.com"><b>Passwordless Authentication</b></a></li>
+                                    <li><a href="https://lis.taliferro.com"><b>Laboratory Information System</b> </a></li>
+                                    <li><a href="https://e-commerce.taliferro.com"><b>e-Commerce</b></a></li>
+                                </ul>
+
                             </li>
                             <li class="">
-                                <a href="/#op-portfolio">Products</a>
+                                <a href="/#op-testimonial" aria-label="Testimonials">Testimonials</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#" aria-label="Learn">Learn</a>
+                                <ul class="axil-submenu">
+                                    <li><b style="color:black">Website Design Guides</b></li>
+                                    <li><a href="/blog/knowing-how-to-create-the-right-cloud-architecture" >Cloud Architecture</a></li>
+                                    <li><a href="/blog/how-to-make-your-technology-infrastructure-future-proof">Future Proof Technology</a></li>
+                                    <li><a href="/blog/oct-2022/architectural-cheat-sheet">Architectural Cheat Sheet</a></li>
+                                    <li><a href="/blog/oct-2022/using-the-lighthouse-google-developer-tool-to-measure-your-websites-performance">Lighthouse</a></li>
+                                    <li><b style="color:black">Website Development</b></li>
+                                    <li><a href="/blog/how-to-lead-teams-to-develop-and-deliver-a-fantastic-product-our-customers-love-and-cant-live-without">Fantastic Products</a></li>
+                                    <li><a href="/blog/how-to-improve-and-innovate-dev-ops-environments-and-ci-cd-processes">Dev Ops Improvement</a></li>
+                                    <li><a href="/blog/oct-2022/restful-checklist">RESTful Checklist</a></li>
+                                    <li><a href="/blog/oct-2022/are-you-crippling-your-agile-team-with-procedure">Agile Improvements</a></li>
+                                    <li><b style="color:black">How To</b></li>
+                                    <li><a href="/blog/a-digital-marketing-strategy-in-a-recession">Digital Marketing</a></li>
+                                    <li><a href="/blog/going-from-website-to-web-business">Web Business</a></li>
+                                    <li><a href="/blog/how-you-should-approach-a-stranger-about-your-product-or-service">Cold Calling</a></li>
+                                    <li><a href="/blog/how-to-turn-your-fashion-and-apparel-online-store-into-a-sales-juggernaut">Online Fashion Store Guide</a></li>
+                                    <li><b style="color:black">Security</b></li>
+                                    <li><a href="/blog/oct-2022/api-security-checklist">API Security Checklist</a></li>
+                                    <li><a href="/blog/oh-how-I-hate-passwords-and-2-factor-authentication">Passwordless</a></li>
+                                </ul>
+
                             </li>
                             <li class="">
-                                <a href="/#op-testimonial">Testimonials</a>
-                            </li>
-                            <li class="">
-                                <a href="/#op-experience">Expertise</a>
-                            </li>
-                            <li class="">
-                                <a href="/#op-blog">Blog</a>
+                                <a href="/blog" aria-label="Blog">Blog</a>
                             </li>
                         </ul>
                     </nav>
@@ -44,7 +72,7 @@
                 <div class="header-action">
                     <ul class="list-unstyled">
                         <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
-                            <button class="btn-wrap btn-dark" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
+                            <button class="btn-wrap btn-dark" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup" aria-label="Menu">
                                 <span></span>
                                 <span></span>
                                 <span></span>

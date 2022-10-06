@@ -1,0 +1,198 @@
+<a href="#main-wrapper" id="backto-top" aria-label="Back to Top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<!-- Preloader Start Here -->
+<div id="preloader"></div>
+<!-- Preloader End Here -->
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-bread-crumb-light [title]="'RESTful Checklist'"></app-bread-crumb-light>
+    <section class="section-padding privacy-policy-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="single-blog">
+                        <div class="single-blog-content">
+                            <div class="post-thumbnail">
+                                <img class="rounded img-fluid wow fadeInUp" src="/assets/images/blog/restful-checklist.webp"
+                                    alt="Are you crippling your Agile team with Procedure?">
+                            </div>
+                            <div class="author">
+                                <div class="author-thumb">
+                                    <img class="img-thumbnail wow fadeInUp" src="assets/media/blog/author-1.webp" alt="Tyrone Showers">
+                                </div>
+                                <div class="info">
+                                    <h6 class="author-name">Tyrone Showers</h6>
+                                    <ul class="blog-meta list-unstyled">
+                                        <li>Oct 4, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp">COMMON RESPONSE HEADERS</h3>
+                            <table class="wow fadeInUp mb--80">
+                                <tr>
+                                    <td> Content-Length </td>
+                                    <td> Length of the message (without headers) </td>
+                                </tr>
+                                <tr>
+                                    <td> Content-Type </td>
+                                    <td> Media type of the entity-body sent to the recipient </td>
+                                </tr>
+                                <tr>
+                                    <td> Connection </td>
+                                    <td> Allows sender to specify options for a particular connection </td>
+                                </tr>
+                                <tr>
+                                    <td> Date </td>
+                                    <td> Current date and time according to the responder </td>
+                                </tr>
+                                <tr>
+                                    <td> ETag </td>
+                                    <td> Current value of the entity. Reflects changes only to object, not the metadata </td>
+                                </tr>
+                                <tr>
+                                    <td>Host</td>
+                                    <td>Specifies the Internet host and port number of response</td>
+                                </tr>
+                                <tr>
+                                    <td>Server</td>
+                                    <td>Information about the software used by the origin server</td>
+                                </tr>
+                            </table>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> COMMON REQUEST HEADERS </h3>
+                            <table class="wow fadeInUp">
+                                <tr>
+                                    <td>Accept</td>
+                                    <td>Type of content adequate for the response</td>
+                                </tr>
+                                <tr>
+                                    <td>Authorization</td>
+                                    <td>Information required for request authentication</td>
+                                </tr>
+                                <tr>
+                                    <td>Cache-Control</td>
+                                    <td>Directives that MUST be obeyed by all caching mechanisms</td>
+                                </tr>
+                                <tr>
+                                    <td>Content-Length</td>
+                                    <td>Length of the message (without headers)</td>
+                                </tr>
+                                <tr>
+                                    <td>Content-Type</td>
+                                    <td>Media type of the entity-body sent to the recipient</td>
+                                </tr>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>Current date and time according to the requester</td>
+                                </tr>
+                                <tr>
+                                    <td>If-Match</td>
+                                    <td>Use with a method to make request conditional</td>
+                                </tr>
+                                <tr>
+                                    <td>If-None-Match </td>
+                                    <td>Use with a method to make request conditional</td>
+                                </tr>
+                                <tr>
+                                    <td>Host</td>
+                                    <td>Specifies the Internet host and port number of the resource requested</td>
+                                </tr>
+                                <tr>
+                                    <td> Server </td>
+                                    <td> Information about the software used by the origin server to handle the request </td>
+                                </tr>
+                            </table>
+                            <p class="wow fadeInUp mb--80"> Caching allows applications to reference a resource or composite resource later, which reduces network traffic, latency, and increases user response. If cacheable, use
+                                an expiration. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> DATA CONSIDERATIONS </h3>
+                            <ul class="wow fadeInUp mb--80">
+                                <li> Is the data portable? </li>
+                                <li> Is system context considered for a particular client? </li>
+                                <li> Are there any developer groups to consider that can be divided? </li>
+                                <li> Is data cacheable? Are the resources’ data cacheable? </li>
+                                <li> Are response formats specified using a schema? </li>
+                                <li> No empty are documents returned in case of an error? [is this correct} </li>
+                                <li> Is the functionality for delivery or aggregation into existing websites? Services are exposed with XML and consumed bDy HTML pages withouRt significantly
+                                    refactAoring the existing weFbsite architectuTre. [is this correct} </li>
+                            </ul>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> PROJECT CONSIDERATIONS </h3>
+                            <ul class="wow fadeInUp mb--80">
+                                <li>Is a risk assessment necessary?</li>
+                                <li>Are all stakeholders considered?</li>
+                                <li>Are there any forms or documentation for reference about how to use the implementation?</li>
+                                <li>Has the rate of growth been anticipated?</li>
+                                <li>Have the effects of projected performance been considered?</li>
+                                <li>Is a growth trend available?</li>
+                                <li>Realistic implementation timeline?</li>
+                                <li>In case of an emergency, has maximum downtime been considered?</li>
+                                <li>Is there a fallback plan?</li>
+                                <li>Are there environment limitations for deployment?</li>
+                                <li>Has bandwidth been considered?</li>
+                                <li>Will the resource always return a response document?</li>
+                                <li>Will the response return a request ID for troubleshooting purposes?</li>
+                            </ul>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp">The Checklist</h3>
+                            <ul class="wow fadeInUp mb--80">
+                                <li> Not converting SOAP services into REST using a one-to-one match</li>
+                                <li> Not using verbs in the URL resource definition </li>
+                                <li> REST has already defined these verbs PUT, POST, DELETE, GET. A resource name should be a plural noun </li>
+                                <li> Following the REST design pattern
+                                    <pre>/plural-noun/ID/plural-noun/ID</pre>
+                                </li>
+                                <li> Using non resource-restrictive URI </li>
+                                <li> Adding words to the URI path that yield no results or are there just to describe the data (don't add meta data to the resource path) </li>
+                                <li> REST resource is stateless </li>
+                                <li> REST resource is static resource </li>
+                                <li> Not using REST as function calls </li>
+                                <li> Not returning empty responses </li>
+                                <li> Identifying the data entities and not focusing on functions </li>
+                                <li> Integration considered with other projects or application </li>
+                                <li> REST resource should be controllable by the caller/client </li>
+                                <li> The REST resource name is a noun and easy to recognize </li>
+                                <li> The REST resource does not use spaces in the name </li>
+                                <li> The “/” in the URI should express a parent-child relationship </li>
+                                <li> Data structure should be the same always and not vary </li>
+                                <li> Even on an error a descriptive response should be returned </li>
+                                <li> Not by T-Mobile</li>
+                                <li> Hyphens or underscores</li>
+                                <li> The REST resource only uses the query string when necessary </li>
+                                <li> Can the query parameter pass through the body of the message? </li>
+                                <li> The resource does not use server-side scripting technology </li>
+                                <li> The response returns a request ID for troubleshooting purposes </li>
+                                <li> Will the resource allow clients the ability to request a specific DRAFT </li>
+                                <li> Is the REST resource using HTTP error codes and media type X- Application-error-code? </li>
+                                <li> Are URLs created for each resource? </li>
+                                <li> Are clients only receiving the representation of the resource? </li>
+                                <li> Can the resource integrate into other applications? </li>
+                                <li> Is the resource explicitly using HTTP actions? </li>
+                                <li> Does the resource transfer XML, JavaScript Object Notation (JSON), or both? </li>
+                                <li> Is the resource a unique URI? </li>
+                                <li> The resource is lowercase </li>
+                                <li> Is the response payload simple, human readable, and connected? </li>
+                                <li> content type best suited for the client application? </li>
+                                <li> Is the resource fully documented? </li>
+                            </ul>
+                            <app-tyrone-showers-bio></app-tyrone-showers-bio>
+                            <div class="row wow fadeInUp">
+                                <div class="col"><a href="/blog/oct-2022/api-security-checklist"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+                                </div>
+                                <div class="col text-end"><a href="#" aria-label="Next"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i> </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================-->
+    <!--=     Call To Action Area Start     =-->
+    <!--=====================================-->
+    <!--=====================================-->
+    <!--=        Footer Area Start       	=-->
+    <!--=====================================-->
+    <app-footer-area></app-footer-area>
+    <!--=====================================-->
+    <!--=       Offcanvas Menu Area       	=-->
+    <!--=====================================-->
+    <app-off-canvas-menu></app-off-canvas-menu>
+</div>

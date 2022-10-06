@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { NgwWowModule } from 'ngx-wow';
-
 import { environment as env } from "src/environments/environment";
 
 import { AppComponent } from './app.component';
@@ -15,6 +14,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { TermsComponent } from './terms/terms.component';
 import { TyroneShowersComponent } from './tyrone-showers/tyrone-showers.component';
 import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 import { DataService } from './services/data.service';
 import { ReturnPolicyComponent } from './return-policy/return-policy.component';
@@ -36,6 +36,11 @@ import { HeaderAreaLightComponent } from './about/header-area-light/header-area-
 import { BreadCrumbLightComponent } from './about/bread-crumb-light/bread-crumb-light.component';
 import { OffCanvasMenuComponent } from './about/off-canvas-menu/off-canvas-menu.component';
 import { VideoAreaComponent } from './about/video-area/video-area.component';
+import { ThankYouComponent } from './about/thank-you/thank-you.component';
+import { BannerArea2Component } from './about/banner-area2/banner-area2.component';
+import { SpecialAreaComponent } from './about/special-area/special-area.component';
+import { ServiceArea2Component } from './about/service-area2/service-area2.component';
+import { BenefitAreaComponent } from './about/benefit-area/benefit-area.component';
 
 @NgModule({
   declarations: [
@@ -63,24 +68,31 @@ import { VideoAreaComponent } from './about/video-area/video-area.component';
     HeaderAreaLightComponent,
     BreadCrumbLightComponent,
     OffCanvasMenuComponent,
-    VideoAreaComponent
+    VideoAreaComponent,
+    ThankYouComponent,
+    BannerArea2Component,
+    SpecialAreaComponent,
+    ServiceArea2Component,
+    BenefitAreaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(env.firebaseConfig),
+    AngularFireAnalyticsModule,
     AngularFirestoreModule,
     RecaptchaModule,
     NgwWowModule,
     RouterModule.forRoot([
-      {path: '', component: AboutComponent, data: { title: 'Home' }},
-      {path: 'privacy-policy', component: PrivacyPolicyComponent, data: { title: 'Privacy Policy' }},
-      {path: 'terms-of-service', component: TermsComponent, data: { title: 'Terms of Service' }},
-      {path: 'refund-policy', component: ReturnPolicyComponent, data: { title: 'Return Policy' }},
-      {path: 'tyrone-showers', component: TyroneShowersComponent, data: { title: 'Tyrone Showers' }},
-      { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
-      {path: '**', component: NotFoundComponent, data: { title: '404 Not Found' }}
+      { path: '', component: AboutComponent, data: { title: 'IT Services, Application and Website Development' } },
+      { path: 'thank-you', component: ThankYouComponent, data: { title: 'Thank You!' } },
+      { path: 'privacy-policy', component: PrivacyPolicyComponent, data: { title: 'Privacy Policy' } },
+      { path: 'terms-of-service', component: TermsComponent, data: { title: 'Terms of Service' } },
+      { path: 'refund-policy', component: ReturnPolicyComponent, data: { title: 'Return Policy' } },
+      { path: 'tyrone-showers', component: TyroneShowersComponent, data: { title: 'Tyrone Showers' } },
+      { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)},
+      { path: '**', component: NotFoundComponent, data: { title: '404 Not Found' } }
     ]),
 
   ],

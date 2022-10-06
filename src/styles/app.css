@@ -99,7 +99,7 @@ STYLESHEET INDEXING
     --border-gray: 1px solid var(--color-gray-4);
     --font-primary: "DM Sans", sans-serif;
     --font-secondary: "Poppins", sans-serif;
-    --font-awesome: "Font Awesome 5 Pro";
+    --font-awesome: "Font Awesome 4.7";
     --transition: all 0.3s ease-in-out;
     --font-body-1: 18px;
     --font-body-2: 16px;
@@ -538,7 +538,7 @@ input {
 }
 
 .input-group:before {
-    content: url("/assets/media/icon/message.png");
+    content: url("/assets/media/icon/message.webp");
     position: absolute;
     left: 30px;
     top: 24px;
@@ -2136,7 +2136,7 @@ Pagination
 }
 
 .shape-group-20 .shape.shape-8.marque-images {
-    background-image: url("/assets/media/others/designer-text.png");
+    background-image: url("/assets/media/others/designer-text.webp");
     background-repeat: repeat-x;
     background-size: auto;
     height: 250px;
@@ -2451,6 +2451,7 @@ Pagination
 
 .main-wrapper {
     overflow: hidden;
+    color: var( --color-black);
     background-color: var(--color-white);
 }
 
@@ -3378,7 +3379,7 @@ Pagination
 }
 
 .banner.banner-style-5 {
-    background-image: url("/assets/media/banner/banner-bg-1.png");
+    background-image: url("/assets/media/banner/banner-bg-1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -7409,7 +7410,7 @@ body.op-modal-open {
 }
 
 .mainmenu > .menu-item-has-children > a::after {
-    content: "\f107";
+    content: "<i class="fa fa-angle-down" aria-hidden="true"></i>";
     font-family: var(--font-awesome);
     font-weight: 400;
     color: var(--color-text-dark);
@@ -9186,7 +9187,8 @@ body.op-modal-open {
 }
 
 .footer-widget .widget-title {
-    font-weight: 700;
+    font-weight: 900;
+    font-size: large;
 }
 
 .footer-widget.border-end {
@@ -9242,15 +9244,15 @@ body.op-modal-open {
 }
 
 .footer-copyright .copyright-text {
-    color: var(--color-gray-1);
+    color: var(--color-black);
 }
 
 .footer-copyright .copyright-text a {
-    color: var(--color-gray-1);
+    color: var(--color-black);
 }
 
 .footer-copyright .copyright-text a:hover {
-    color: var(--color-primary);
+    color: var(--color-black);
 }
 
 .footer-bottom-link {
@@ -9309,11 +9311,11 @@ body.op-modal-open {
 }
 
 .footer-dark .footer-copyright .copyright-text {
-    color: var(--color-gray-2);
+    color: var(--color-black);
 }
 
 .footer-dark .footer-copyright .copyright-text a {
-    color: var(--color-gray-2);
+    color: var(--color-black);
 }
 
 .footer-dark .footer-copyright .copyright-text a:hover {
@@ -9321,7 +9323,7 @@ body.op-modal-open {
 }
 
 .footer-dark .footer-bottom-link ul li a {
-    color: var(--color-gray-2);
+    color: var(--color-black);
 }
 
 .footer-dark .footer-bottom-link ul li a:hover {
@@ -9329,7 +9331,7 @@ body.op-modal-open {
 }
 
 .footer-dark .footer-bottom-link ul li:after {
-    background-color: var(--color-gray-2);
+    background-color: var(--color-black);
 }
 
 /*=======================================================================
@@ -9436,7 +9438,7 @@ body.op-modal-open {
 }
 
 .active-dark-mode .input-group::before {
-    content: url("/assets/media/icon/message-light.png");
+    content: url("/assets/media/icon/message-light.webp");
 }
 
 @media only screen and (max-width: 479px) {
@@ -9476,7 +9478,8 @@ body.op-modal-open {
 }
 
 .active-dark-mode .main-wrapper {
-    background-color: var(--dark-main-body);
+    color: var( --color-white);
+    background-color: var(--color-black);
 }
 
 .active-dark-mode .axil-btn.btn-borderd {

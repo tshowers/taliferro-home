@@ -15,29 +15,34 @@
         },
 
         methods: function(e) {
-            axilInit.w();
-            axilInit.contactForm();
-            axilInit.axilBackToTop();
-            axilInit.stickyHeaderMenu();
-            axilInit.mobileMenuActivation();
-            axilInit.salActivation();
-            axilInit.axilMasonary();
-            axilInit.counterUp();
-            axilInit.axilSlickActivation();
-            axilInit.magnificPopupActivation();
-            axilInit.countdownInit('.countdown', '2022/12/01');
-            axilInit.tiltAnimation();
-            axilInit.menuLinkActive();
-            axilInit.audioPlayerActivation();
-            axilInit.onePageNav();
-            axilInit.pricingPlan();
-            axilInit.marqueImages();
-            axilInit.axilHover();
-            axilInit.onePageTopFixed();
-            axilInit.blogModalActivation();
-            axilInit.portfolioModalActivation();
-            axilInit.caseModalActivation();
-            axilInit.themeColorSet();
+            try {
+                axilInit.w();
+                axilInit.contactForm();
+                axilInit.axilBackToTop();
+                axilInit.stickyHeaderMenu();
+                axilInit.mobileMenuActivation();
+                axilInit.salActivation();
+                axilInit.axilMasonary();
+                axilInit.counterUp();
+                axilInit.axilSlickActivation();
+                axilInit.magnificPopupActivation();
+                axilInit.countdownInit('.countdown', '2022/12/01');
+                axilInit.tiltAnimation();
+                axilInit.menuLinkActive();
+                axilInit.audioPlayerActivation();
+                axilInit.onePageNav();
+                axilInit.pricingPlan();
+                axilInit.marqueImages();
+                axilInit.axilHover();
+                axilInit.onePageTopFixed();
+                axilInit.blogModalActivation();
+                axilInit.portfolioModalActivation();
+                axilInit.caseModalActivation();
+                axilInit.themeColorSet();
+                } catch(error) {
+
+            }
+
            
         },
 

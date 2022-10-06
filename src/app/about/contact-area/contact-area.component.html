@@ -13,7 +13,7 @@
                     <div class="address-list">
                         <div class="address">
                             <h6 class="title">Mail</h6>
-                            <p><a href="mailto:info@taliferro.com">info@taliferro.com</a></p>
+                            <p><a href="mailto:info@taliferro.com" aria-label="Send Email to info@taliferro.com" >info@taliferro.com</a></p>
                         </div>
                         <div class="address">
                             <h6 class="title">Address</h6>
@@ -21,7 +21,7 @@
                         </div>
                         <div class="address">
                             <h6 class="title">Phone</h6>
-                            <p><a href="tel:4253053748">425.305.3748</a></p>
+                            <p><a href="tel:4253053748" aria-label="Dial 425.305.3748" >425.305.3748</a></p>
                         </div>
                     </div>
                 </div>
@@ -30,33 +30,30 @@
                 <div *ngIf="message">
                     <div class="alert alert-success text-center" role="alert"> {{message}} </div>
                 </div>
-                <div class="contact-form-box mb--30" *ngIf="!message">
+                <div class="contact-form-box mb--30">
                     <h3 class="title text-capitalize">Describe your project</h3>
                     <form #dataForm2="ngForm" (ngSubmit)="onSubmit();dataForm2.reset();" class="axil-contact-form">
                         <div class="form-group">
                             <label>First Name</label>
-                            <input [(ngModel)]="contact.firstName" id="firstName" name="firstName" autocomplete="off" type="text" class="form-control" placeholder="John" required>
+                            <input [(ngModel)]="contact.firstName" id="userFirstName" name="userFirstName" autocomplete="off" type="text" class="form-control" placeholder="John" required>
                         </div>
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input [(ngModel)]="contact.lastName" id="lastName" name="lastName" autocomplete="off" type="text" class="form-control" placeholder="Smith" required>
+                            <input [(ngModel)]="contact.lastName" id="userLastName" name="userLastName" autocomplete="off" type="text" class="form-control" placeholder="Smith" required>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input [(ngModel)]="email.emailAddress" id="emailAddress" type="email" class="form-control" name="emailAddress" autocomplete="off" placeholder="example@mail.com"
+                            <input [(ngModel)]="email.emailAddress" id="userEmailAddress" type="email" class="form-control" name="userEmailAddress" autocomplete="off" placeholder="example@mail.com"
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                         </div>
                         <div class="form-group mb--40">
                             <label>How can we help you?</label>
-                            <textarea [(ngModel)]="note.text" name="message" id="message" class="form-control textarea" cols="30" rows="6" required></textarea>
-                        </div>
-                        <div class="form-group mb--40">
-                            <re-captcha (resolved)="resolved($event)" siteKey="6LcxPI8hAAAAADx9HjHU-dhIeIYp69oTdxms5esv"></re-captcha>
+                            <textarea [(ngModel)]="note.text" name="userMessage" id="userMessage" class="form-control textarea" cols="30" rows="6" required></textarea>
                         </div>
                         <div class="clearfix"></div>
 
-                        <div class="form-group text-end"  [hidden]="!captcha">
-                            <button type="submit" class="axil-btn btn-fill-primary w-auto btn-primary" name="submit-btn" [disabled]="!dataForm2.form.valid">SEND</button>
+                        <div class="form-group text-end">
+                            <button type="submit" class="axil-btn btn-fill-primary w-auto btn-primary" name="submit-btn" [disabled]="!dataForm2.form.valid" aria-label="SEND">SEND</button>
                         </div>
                         <input type="hidden" class="form-control" name="contact-company" value="Null">
                     </form>

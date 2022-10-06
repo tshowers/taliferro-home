@@ -20,37 +20,20 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
+              "src/robots.txt",
+              "src/assets/files/sitemap.xml",
               "src/assets"
             ],
             "styles": [
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/wowjs/css/libs/animate.css",
-              "src/styles/vendor/slick.css",
-              "src/styles/vendor/slick-theme.css",
-              "src/styles/vendor/sal.css",
-              "src/styles/vendor/magnific-popup.css",
-              "src/styles/vendor/green-audio-player.min.css",
               "src/styles/app.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/wowjs/dist/wow.js",
-              "src/assets/js/vendor/jquery-3.6.0.min.js",
-              "src/assets/js/vendor/isotope.pkgd.min.js",
-              "src/assets/js/vendor/imagesloaded.pkgd.min.js",
-              "src/assets/js/vendor/odometer.min.js",
-              "src/assets/js/vendor/jquery-appear.js",
-              "src/assets/js/vendor/slick.min.js",
-              "src/assets/js/vendor/sal.js",
-              "src/assets/js/vendor/jquery.magnific-popup.min.js",
-              "src/assets/js/vendor/js.cookie.js",
-              "src/assets/js/vendor/jquery.style.switcher.js",
-              "src/assets/js/vendor/jquery.countdown.min.js",
-              "src/assets/js/vendor/tilt.js",
-              "src/assets/js/vendor/green-audio-player.min.js",
-              "src/assets/js/vendor/jquery.nav.js",
-              "src/assets/js/app.js"
+              "node_modules/wowjs/dist/wow.js"
             ]
           },
           "configurations": {
@@ -113,38 +96,20 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
+              "src/robots.txt",
+              "src/assets/files/sitemap.xml",
               "src/assets"
             ],
             "styles": [
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/wowjs/css/libs/animate.css",
-              "src/styles/vendor/slick.css",
-              "src/styles/vendor/slick-theme.css",
-              "src/styles/vendor/sal.css",
-              "src/styles/vendor/magnific-popup.css",
-              "src/styles/vendor/green-audio-player.min.css",
               "src/styles/app.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/chart.js/dist/chart.min.js",
-              "node_modules/wowjs/dist/wow.js",
-              "src/assets/js/vendor/jquery-3.6.0.min.js",
-              "src/assets/js/vendor/isotope.pkgd.min.js",
-              "src/assets/js/vendor/imagesloaded.pkgd.min.js",
-              "src/assets/js/vendor/odometer.min.js",
-              "src/assets/js/vendor/jquery-appear.js",
-              "src/assets/js/vendor/slick.min.js",
-              "src/assets/js/vendor/sal.js",
-              "src/assets/js/vendor/jquery.magnific-popup.min.js",
-              "src/assets/js/vendor/js.cookie.js",
-              "src/assets/js/vendor/jquery.style.switcher.js",
-              "src/assets/js/vendor/jquery.countdown.min.js",
-              "src/assets/js/vendor/tilt.js",
-              "src/assets/js/vendor/green-audio-player.min.js",
-              "src/assets/js/vendor/jquery.nav.js",
-              "src/assets/js/app.js"
+              "node_modules/wowjs/dist/wow.js"
 
             ]
           }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { environment } from 'src/environments/environment';
 
@@ -54,7 +55,7 @@ export class ContactAreaComponent implements OnInit {
     text: ''
   }
 
-  constructor(private _dataService: DataService) { }
+  constructor(private _router:Router, private _dataService: DataService) { }
 
   ngOnInit(): void {
     this.contact.emails.push(this.email);
@@ -64,6 +65,7 @@ export class ContactAreaComponent implements OnInit {
   onSubmit(): void {
     this._dataService.add(environment.CONTACTS, this.contact);
     this.message="Thank You! Some one will get back to you shortly.";
+    this._router.navigate(['thank-you']);
   }
 
   resolved(captchaResponse: string) : void {

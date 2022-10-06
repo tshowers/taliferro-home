@@ -28,7 +28,7 @@ export const environment = {
   LOGO_PATH: "logo",
   FILE_PATH: "files",
   RESULTS_PATH: "results",
-  COMPANY_NAME: 'Taliferro Group'
+  COMPANY_NAME: 'Taliferro'
 };
 
 /*
