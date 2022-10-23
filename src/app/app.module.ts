@@ -41,6 +41,18 @@ import { BannerArea2Component } from './about/banner-area2/banner-area2.componen
 import { SpecialAreaComponent } from './about/special-area/special-area.component';
 import { ServiceArea2Component } from './about/service-area2/service-area2.component';
 import { BenefitAreaComponent } from './about/benefit-area/benefit-area.component';
+import { ApiDesignComponent } from './about/api-design/api-design.component';
+import { AgileTrainingComponent } from './about/agile-training/agile-training.component';
+import { CloudArchitectureComponent } from './about/cloud-architecture/cloud-architecture.component';
+import { DataDesignComponent } from './about/data-design/data-design.component';
+import { WebsiteOptimizationComponent } from './about/website-optimization/website-optimization.component';
+import { WebsiteDevelopmentComponent } from './about/website-development/website-development.component';
+import { ApigeeIntegrationComponent } from './about/apigee-integration/apigee-integration.component';
+import { PayPerClickComponent } from './about/pay-per-click/pay-per-click.component';
+import { SocialMediaMarketingComponent } from './about/social-media-marketing/social-media-marketing.component';
+import { ECommerceArchitectureComponent } from './about/e-commerce-architecture/e-commerce-architecture.component';
+import { DesignProcessAreaComponent } from './about/design-process-area/design-process-area.component';
+import { AboutUsAreaComponent } from './about/about-us-area/about-us-area.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +85,19 @@ import { BenefitAreaComponent } from './about/benefit-area/benefit-area.componen
     BannerArea2Component,
     SpecialAreaComponent,
     ServiceArea2Component,
-    BenefitAreaComponent
+    BenefitAreaComponent,
+    ApiDesignComponent,
+    AgileTrainingComponent,
+    CloudArchitectureComponent,
+    DataDesignComponent,
+    WebsiteOptimizationComponent,
+    WebsiteDevelopmentComponent,
+    ApigeeIntegrationComponent,
+    PayPerClickComponent,
+    SocialMediaMarketingComponent,
+    ECommerceArchitectureComponent,
+    DesignProcessAreaComponent,
+    AboutUsAreaComponent
   ],
   imports: [
     BrowserModule,
@@ -86,6 +110,15 @@ import { BenefitAreaComponent } from './about/benefit-area/benefit-area.componen
     NgwWowModule,
     RouterModule.forRoot([
       { path: '', component: AboutComponent, data: { title: 'IT Services, Application and Website Development' } },
+      { path: 'e-commerce-architecture', component: ECommerceArchitectureComponent, data: { title: 'e-Commerce Architecture' } },
+      { path: 'api-design', component: ApiDesignComponent, data: { title: 'API Design' } },
+      { path: 'agile-coaching', component: AgileTrainingComponent, data: { title: 'Agile Coaching' } },
+      { path: 'cloud-architecture', component: CloudArchitectureComponent, data: { title: 'Cloud Architecture' } },
+      { path: 'data-design', component: DataDesignComponent, data: { title: 'Data Design' } },
+      { path: 'website-optimization', component: WebsiteOptimizationComponent, data: { title: 'Website Optimization' } },
+      { path: 'website-development', component: WebsiteDevelopmentComponent, data: { title: 'Website Development' } },
+      { path: 'apigee-integration', component: ApigeeIntegrationComponent, data: { title: 'APIGEE Integration' } },
+      { path: 'social-media-marketing', component: SocialMediaMarketingComponent, data: { title: 'Social Media Marketing' } },
       { path: 'thank-you', component: ThankYouComponent, data: { title: 'Thank You!' } },
       { path: 'privacy-policy', component: PrivacyPolicyComponent, data: { title: 'Privacy Policy' } },
       { path: 'terms-of-service', component: TermsComponent, data: { title: 'Terms of Service' } },

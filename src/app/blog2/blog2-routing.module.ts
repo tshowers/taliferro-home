@@ -10,6 +10,21 @@ import { Oct72022Component } from './oct72022/oct72022.component';
 import { Oct82022Component } from './oct82022/oct82022.component';
 import { Oct92022Component } from './oct92022/oct92022.component';
 import { Oct102022Component } from './oct102022/oct102022.component';
+import { Oct112022Component } from './oct112022/oct112022.component';
+import { Oct122022Component } from './oct122022/oct122022.component';
+import { Oct132022Component } from './oct132022/oct132022.component';
+import { Oct142022Component } from './oct142022/oct142022.component';
+import { Oct172022Component } from './oct172022/oct172022.component';
+import { Oct182022Component } from './oct182022/oct182022.component';
+import { Oct192022Component } from './oct192022/oct192022.component';
+import { Oct202022Component } from './oct202022/oct202022.component';
+import { Oct212022Component } from './oct212022/oct212022.component';
+import { Oct222022Component } from './oct222022/oct222022.component';
+import { Oct242022Component } from './oct242022/oct242022.component';
+import { Oct252022Component } from './oct252022/oct252022.component';
+import { Oct262022Component } from './oct262022/oct262022.component';
+import { Oct272022Component } from './oct272022/oct272022.component';
+import { Oct282022Component } from './oct282022/oct282022.component';
 
 
 const routes: Routes = [
@@ -23,6 +38,21 @@ const routes: Routes = [
     { path: 'architectural-cheat-sheet', component: Oct82022Component, data: { title: 'Architectural Cheat Sheet' } },
     { path: 'using-the-lighthouse-google-developer-tool-to-measure-your-websites-performance', component: Oct92022Component, data: { title: 'Using The Lighthouse Google Developer Tool to measure your website\'s performance' } },
     { path: 'the-taliferro-group-story', component: Oct102022Component, data: { title: 'The Taliferro Group Story' } },
+    { path: 'the-marriage-of-software-development-and-social-media-marketing', component: Oct112022Component, data: { title: 'The marriage of software development and social media marketing' } },
+    { path: 'what-weve-learned-from-doing-our-own-social-media-marketing', component: Oct122022Component, data: { title: 'What we\'ve learned from doing our own Social Media Marketing' } },
+    { path: 'leadership-isnt-about-platitudes-or-is-it', component: Oct132022Component, data: { title: 'Leadership isn\'t about platitudes, or is it?' } },
+    { path: 'the-technical-aspects-of-tackling-multi-tenant-saas', component: Oct142022Component, data: { title: 'The technical aspects of Tackling Multi-tenant SaaS' } },
+    { path: 'scaling-strategies', component: Oct172022Component, data: { title: 'Scaling Strategies' } },
+    { path: 'are-you-suffering-from-app-fatigue', component: Oct182022Component, data: { title: 'Are you suffering from app fatigue?' } },
+    { path: 'the-e-commerce-domain', component: Oct192022Component, data: { title: 'The e-Commerce Domain' } },
+    { path: 'api-policies', component: Oct202022Component, data: { title: 'API Policies' } },
+    { path: 'be-careful-of-adding-widgets-to-your-shopify-store', component: Oct212022Component, data: { title: 'Be careful of adding widgets to your Shopify store' } },
+    { path: 'website-took-just-one-second-longer-to-load', component: Oct222022Component, data: { title: 'When I read Amazon would lose $1.6 billion a year if its website took just one second longer to load, I was amazed' } },
+    { path: 'i-was-a-telecommunications-consultant-for-eight-years', component: Oct242022Component, data: { title: 'I was a telecommunications consultant for eight years - it is a different culture' } },
+    { path: 'our-transformation-methodology-here-is-our-approach', component: Oct252022Component, data: { title: 'Our transformation methodology - here is our approach' } },
+    { path: 'lack-of-resources-or-expertise-is-not-a-big-issue-for-companies', component: Oct262022Component, data: { title: 'Lack of Resources or Expertise is not a big issue for companies' } },
+    { path: 'dont-take-cybersecurity-lightly', component: Oct272022Component, data: { title: 'Don\'t take Cybersecurity Lightly' } },
+    { path: 'how-we-can-help-with-your-digital-transformation', component: Oct282022Component, data: { title: 'How we can help with your Digital Transformation' } },
 ]
 
 @NgModule({

@@ -1,0 +1,45 @@
+<a href="#main-wrapper" aria-label="Back to Top" id="back-to-top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<app-preloader></app-preloader>
+<app-modal-box></app-modal-box>
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-banner-area2  [header]="'APIGEE Integration'" [description]="'APIGEE is a cloud-based API Management platform that allows you to securely manage your APIs, providing a host of features and tools to make it easy. API management is a powerful tool that can help you optimize your API usage and make it easier to manage. We can walk you through how to use the API Management solution to create security, mediation, and caching policies.'" [image]="'assets/images/apigee-integration.png'"></app-banner-area2>
+    <app-design-process-area
+    [subtitle]="'Control API Access'"
+    [header]="'API Security'"
+    [description]="'APIGEE Security Policies allow you to control access to your APIs based on user groups, IP addresses, or other factors. You can also manage how your users are authenticated and authorized through the Security Policy feature of APIGEE.'"
+    [image1]="'/assets/images/apigee-integration1.png'"
+    [subtitle1]="'(such as mobile apps)'"
+    [title1]="'Mediation'"
+    [description1]="'We help you configure mediation policy to allow you to define how your APIs will be exposed to clients by determining what endpoint they should use. Use mediation to enforce security policies by requiring client apps to authenticate before accessing the API.'"
+    [image2]="'/assets/images/apigee-integration2.png'"
+    [subtitle2]="'API proxy'"
+    [title2]="'Caching'"
+    [description2]="'Use caching policies to manage which resources are cached by an API proxy to improve performance for clients accessing the backend services on behalf of those clients.'"
+    [image3]="'/assets/images/apigee-integration3.png'"
+    [subtitle3]="'best practices'"
+    [title3]="'Proxy Design'"
+    [description3]="'We deliver best practice API proxy design and will help ensure that your APIs are designed appropriately for consumption via an API proxy - ensuring that they are well documented and properly secured so that any number of third parties can safely access them without compromising security or privacy concerns.'"
+    [image4]="'/assets/images/apigee-integration4.png'"
+    [subtitle4]="'keep APIs organized'"
+    [title4]="'Swaggers'"
+    [description4]="'Swagger is an open-source toolkit for describing, producing, consuming, and visualizing RESTful web services in machine readable format (OpenAPI) or human readable format (JSON). We can guide you on proper ussage.'"
+    ></app-design-process-area>
+    <app-about-us-area
+    [header]="'APIGEE methodologies'"
+    [subtitle]="'professional services'"
+    [description]="'The API proxy is a critical component of your API gateway. It\'s the layer that sits between client applications and your backend resources and allows you to manage traffic flow and security policies.'"
+    [title1]="'Security Policies'"
+    [description1]="'Enforce authentication, authorization and auditing rules for requests through an API proxy.'"
+    [title2]="'Mediation Policies'"
+    [description2]="'Control how data flows through an API proxy using caching and transformation in addition to throttling and rate limiting.'"
+    [title3]="'Caching policies'"
+    [description3]="'We\'ll help you configure cache settings for each API endpoint separately or globally across all endpoints.'"
+    [formTitle]="'Start Your Ingegration'"
+    ></app-about-us-area>
+    <app-benefit-area></app-benefit-area>
+    <app-call-to-action></app-call-to-action>
+    <app-footer-area></app-footer-area>
+</div>

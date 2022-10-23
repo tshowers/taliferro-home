@@ -1,0 +1,45 @@
+<a href="#main-wrapper" aria-label="Back to Top" id="back-to-top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<app-preloader></app-preloader>
+<app-modal-box></app-modal-box>
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-banner-area2  [header]="'Design Design'" [description]="'Data design is a critical aspect of any data project. It\'s where you determine how to structure your data, which can make or break the success of your project. Data designers must be able to handle both SQL and NoSQL databases and have a firm grasp of the best practices for each type of database.'" [image]="'assets/images/data-design.png'"></app-banner-area2>
+    <app-design-process-area
+    [subtitle]="'Relational and non-relational'"
+    [header]="'Data Design Best Practices'"
+    [description]="'Data designers must understand relational databases (SQL) and non-relational databases (NoSQL). They must be able to use both types of databases to create a well-rounded skill set that will allow them to work with all kinds of clients.'"
+    [image1]="'/assets/images/data-design1.png'"
+    [subtitle1]="'data model'"
+    [title1]="'design practices'"
+    [description1]="'There are a lot of data design practices that you can use to improve your data model and ensure a more efficient process for your company. The most important thing is to avoid creating unnecessary columns, slowing down queries, and preventing you from using the correct data at the right time. If possible, try to store all of your information in one table or use denormalization to combine multiple values into one field.'"
+    [image2]="'/assets/images/data-design2.png'"
+    [subtitle2]="'efficiency'"
+    [title2]="'Indexing'"
+    [description2]="'Another critical step is having an efficient index on your tables. An index helps speed up queries when you\'re looking for specific data points within a table—it\'s basically like a map that tells SQL how to find rows based on their values. But indexes can also hurt performance if they\'re too large or poorly designed, so keep them small and relevant.'"
+    [image3]="'/assets/images/data-design3.png'"
+    [subtitle3]="'Tips on coaching'"
+    [title3]="'NoSQL vs SQL'"
+    [description3]="'We have a firm grasp of best practices for each type of database. In SQL, this means knowing how to normalize tables and perform queries efficiently; in NoSQL, it means being able to create indexes and query documents effectively.'"
+    [image4]="'/assets/images/data-design4.png'"
+    [subtitle4]="'understanding constraints'"
+    [title4]="'duplication'"
+    [description4]="'Keep an eye out for duplicate records. Duplicates can occur when multiple entries exist for one entity (like name or email address) or various rows with similar values (like user IDs). If you find duplicates in your database structure, consider adding unique constraints or indexes so that these records will be automatically filtered out during query time (and won\'t count toward page views).'"
+    ></app-design-process-area>
+    <app-about-us-area
+    [header]="'data methodologies'"
+    [subtitle]="'professional services'"
+    [description]="'Data design is organizing and structuring data to make it more useful. It\'s essential to understand the difference between NoSQL and SQL databases and their respective strengths and weaknesses. When choosing which type of database is right for your project, you should consider a few key factors:'"
+    [title1]="'Cost'"
+    [description1]="'How much data do you need to store? (This will affect how much memory storage will cost.)'"
+    [title2]="'Speed'"
+    [description2]="'How often do you need access to that data? (This will determine how quickly you can retrieve it.)'"
+    [title3]="'Content Type'"
+    [description3]="'What sort of content does your data contain? (This will help determine which type of indexing scheme works best.)'"
+    [formTitle]="'Let Us Help'"
+    ></app-about-us-area>
+    <app-benefit-area></app-benefit-area>
+    <app-call-to-action></app-call-to-action>
+    <app-footer-area></app-footer-area>
+</div>

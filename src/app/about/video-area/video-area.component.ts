@@ -12,7 +12,7 @@ export class VideoAreaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.iVideo = Math.floor(Math.random() * 3);
+    this.iVideo = Math.floor(Math.random() * 4);
 
     console.log("Which Video", this.iVideo)
   }

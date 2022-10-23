@@ -1,0 +1,87 @@
+<a href="#main-wrapper" id="backto-top" aria-label="Back to Top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<!-- Preloader Start Here -->
+<div id="preloader"></div>
+<!-- Preloader End Here -->
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-bread-crumb-light [title]="'API Policies'"></app-bread-crumb-light>
+    <section class="section-padding privacy-policy-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="single-blog">
+                        <div class="single-blog-content">
+                            <div class="post-thumbnail">
+                                <img class="rounded img-fluid wow fadeInUp" src="/assets/images/blog/api-policies.webp" alt="API Policies">
+                            </div>
+                            <div class="author">
+                                <div class="author-thumb">
+                                    <img class="img-thumbnail wow fadeInUp" src="assets/media/blog/author-1.webp" alt="Tyrone Showers">
+                                </div>
+                                <div class="info">
+                                    <h6 class="author-name">Tyrone Showers</h6>
+                                    <ul class="blog-meta list-unstyled">
+                                        <li>Oct 20, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 class="wow fadeInUp">Introduction</h2>
+                            <p class="wow fadeInUp"> API policies are a critical part of API management. They help protect your API, ensure traffic is handled correctly, and keep customers happy.
+                                Below I will cover the different types of policies available and how they can be used. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Rate Limiting Policy </h3>
+                            <p class="wow fadeInUp"> Rate limiting controls the number of requests that can be made to your API in a given time period. For example, if you have an API that allows
+                                users to create orders, and those orders need to be processed by someone in your company before they can be shipped out, then you probably want to enforce some rate
+                                limits on this particular action. If a user is allowed to place 50 orders per hour, but only ten people are working on processing them, those 50 orders will likely not
+                                get processed until the next hour has passed. </p>
+                            <p class="wow fadeInUp"> To keep your code running efficiently and optimally, you must implement rate-limiting policies when building new features or adding new
+                                functionality within existing ones (e.g., increasing order limits). In addition to keeping things running smoothly during peak periods of traffic (like Black Friday),
+                                implementing these policies helps ensure that systems aren't bogged down by automated scripts trying to shove as many requests through their APIs as possible. This
+                                scenario leads us nicely into our next section: </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Traffic Management Policy </h3>
+                            <p class="wow fadeInUp"> Traffic management policies are used to control the amount of traffic that can be sent to an API. When a policy is set up at the account level, it
+                                applies to all APIs in your account (unless you override it at the API level). This is important because APIs have limits on how many requests they can handle, and if
+                                these limits are exceeded, your API may stop working or become unstable. </p>
+                            <p class="wow fadeInUp"> When setting up traffic management policies, keep in mind that some limit request rates based on a per-second basis (for example, 50 requests/s)
+                                while others limit request rates based on a per-minute basis (for example, 300 requests/min). </p>
+                            <p class="wow fadeInUp"> Along with limiting request rates, there are other things you can do with traffic management policies, such as setting up quotas or allowing only
+                                specific IP addresses access through whitelisting them or blacklisting others. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Mediation Policy </h3>
+                            <p class="wow fadeInUp"> Mediation is sending traffic to two or more endpoints and then having those endpoints share the load. This allows you to achieve multiple goals
+                                simultaneously, including rate limiting, traffic management, and content delivery network (CDN) functionality. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Analytics and API Monitoring Policy </h3>
+                            <p class="wow fadeInUp"> Monitoring and analytics are two different things. Analytics is about understanding your data. Monitoring is about understanding your performance.
+                            </p>
+                            <p class="wow fadeInUp"> The goal of an API monitoring policy is to collect data on the performance of your API, so you can understand where it's going wrong and improve it
+                                over time. </p>
+                            <p class="wow fadeInUp"> API Policies will help you manage your API traffic, security, and customer-facing QoS. </p>
+                            <p class="wow fadeInUp"> As a provider of APIs, you must manage traffic, security, and QoS. API policies can help you control access to your APIs, enforce rate limits, and
+                                mediate traffic. </p>
+                            <h2 class="wow fadeInUp">Conclusion</h2>
+                            <p class="wow fadeInUp"> This post has explained what API policies are and how you can use them to manage your API traffic. There are a few different types of policies that
+                                I've discussed, but they all have the same goal: to make sure your customers (and other developers) have a good experience when using your APIs. </p>
+                            <app-tyrone-showers-bio></app-tyrone-showers-bio>
+                            <div class="row wow fadeInUp">
+                                <div class="col"><a href="/blog/oct-2022/the-e-commerce-domain"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+                                </div>
+                                <div class="col text-end"><a href="/blog/oct-2022/be-careful-of-adding-widgets-to-your-shopify-store" aria-label="Next"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i> </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================-->
+    <!--=     Call To Action Area Start     =-->
+    <!--=====================================-->
+    <!--=====================================-->
+    <!--=        Footer Area Start       	=-->
+    <!--=====================================-->
+    <app-footer-area></app-footer-area>
+    <!--=====================================-->
+    <!--=       Offcanvas Menu Area       	=-->
+    <!--=====================================-->
+    <app-off-canvas-menu></app-off-canvas-menu>
+</div>

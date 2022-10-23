@@ -15,10 +15,9 @@
                         <li>Too slow?</li>
                         <li>Suffering from App Fatigue?</li>
                     </ul>
-                    <div style="color: white;" class="wow fadeInUp mb-3">Allow us to show how you can simplify software use</div>
-                    <span  style="color: white;" class="wow fadeInUp mb-3"><strong>Application and Website Development</strong><br> <i style="font-size:small ;">We build software to help your organization solve problems.</i></span>
+                    <div style="color: white;" class="wow fadeInUp mb-3"><strong>Try Our Easy Setup and Ready to Use Products</strong> </div>
                     <div class="sal-animate  wow fadeInUp">
-                        <a href="#op-service" aria-label="View Services" class="axil-btn btn-fill-white btn-large">View Services</a>
+                        <a href="#op-portfolio" aria-label="View Products" class="axil-btn btn-fill-white btn-large">View Products</a>
                     </div>
                 </div>
             </div>
@@ -45,10 +44,13 @@
                             </div>
                             <div class="form-group mb--40">
                                 <label>Website</label>
-                                <input [(ngModel)]="contact.website" id="userWebsite" type="text" class="form-control" name="userWebsite" placeholder="https://wwww.example.com" autocomplete="off" required>
+                                <input [(ngModel)]="contact.website" id="userWebsite" type="url" class="form-control" name="userWebsite" placeholder="https://wwww.example.com" pattern="https://.*" autocomplete="off" required>
+                            </div>
+                            <div class="form-group mb--40">
+                                <re-captcha (resolved)="resolved($event)" siteKey="6LcxPI8hAAAAADx9HjHU-dhIeIYp69oTdxms5esv"></re-captcha>
                             </div>
                             <div class="clearfix"></div>
-                            <div class="form-group">
+                            <div class="form-group"  [hidden]="!captcha">
                                 <button type="submit" style="cursor:pointer" class="axil-btn btn-borderd btn-fluid btn-primary" name="submit-btn" aria-label="Submit" [disabled]="!dataForm.form.valid">Submit</button>
                             </div>
                             <input type="hidden" class="form-control" name="contact-message" value="Null">

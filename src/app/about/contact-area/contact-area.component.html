@@ -50,9 +50,13 @@
                             <label>How can we help you?</label>
                             <textarea [(ngModel)]="note.text" name="userMessage" id="userMessage" class="form-control textarea" cols="30" rows="6" required></textarea>
                         </div>
+                        <div class="form-group mb--40">
+                            <re-captcha (resolved)="resolved($event)" siteKey="6LcxPI8hAAAAADx9HjHU-dhIeIYp69oTdxms5esv"></re-captcha>
+                        </div>
+
                         <div class="clearfix"></div>
 
-                        <div class="form-group text-end">
+                        <div class="form-group text-end"  [hidden]="!captcha">
                             <button type="submit" class="axil-btn btn-fill-primary w-auto btn-primary" name="submit-btn" [disabled]="!dataForm2.form.valid" aria-label="SEND">SEND</button>
                         </div>
                         <input type="hidden" class="form-control" name="contact-company" value="Null">

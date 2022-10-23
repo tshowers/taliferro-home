@@ -1,0 +1,87 @@
+<a href="#main-wrapper" id="backto-top" aria-label="Back to Top" class="back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+<!-- Preloader Start Here -->
+<div id="preloader"></div>
+<!-- Preloader End Here -->
+<div id="main-wrapper" class="main-wrapper">
+    <app-header-area-light></app-header-area-light>
+    <app-bread-crumb-light [title]="'The technical aspects of Tackling Multi-tenant SaaS'"></app-bread-crumb-light>
+    <section class="section-padding privacy-policy-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="single-blog">
+                        <div class="single-blog-content">
+                            <div class="post-thumbnail">
+                                <img class="rounded img-fluid wow fadeInUp" src="/assets/images/blog/the-technical-aspects-of-tackling-multi-tenant-saas.webp"
+                                    alt="The technical aspects of Tackling Multi-tenant SaaS">
+                            </div>
+                            <div class="author">
+                                <div class="author-thumb">
+                                    <img class="img-thumbnail wow fadeInUp" src="assets/media/blog/author-1.webp" alt="Tyrone Showers">
+                                </div>
+                                <div class="info">
+                                    <h6 class="author-name">Tyrone Showers</h6>
+                                    <ul class="blog-meta list-unstyled">
+                                        <li>Oct 14, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 class="wow fadeInUp"> Introduction </h2>
+                            <p class="wow fadeInUp"> SaaS applications are an excellent way for companies to provide access to their software and data for employees. These applications are often
+                                multi-tenant and allow many different companies to use the same infrastructure. The technical aspects of this can be tricky, but here are some tools you can use to make
+                                your life easier: </p>
+                            <p class="wow fadeInUp"> Role-Based Access Control (RBAC): The accounts have different roles, and access control is based on these roles. The Role Based Access Control
+                                (RBAC) is a way of controlling access to resources. RBAC can be used to control access to certain parts of the application or entire applications. It can be implemented
+                                in many ways, but some common patterns exist. </p>
+                            <p class="wow fadeInUp"> In this blog post, we will not go into details about what RBAC is and how it works but focus on how you, as a developer, should think about
+                                implementing it in your web application. </p>
+                            <p class="wow fadeInUp mb--80"> Single Sign On (SSO): Account admins can define groups of employees who should have access to certain parts of their application. The users can use
+                                their company's primary email address or an SSO provider to sign into the app. The Single Sign On (SSO) feature allows admins to define groups of employees who should
+                                have access to certain parts of their application. The users can use their company's primary email address or an SSO provider to sign in. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> SSO providers include Google, Facebook, Twitter, and Microsoft </h3>
+                            <p class="wow fadeInUp"> User invitations: Invitations are sent to users via email, usually with a one-time link to verify the email address and create a password. </p>
+                            <p class="wow fadeInUp"> Onboarding: Onboarding is the process of getting a new user up and running. This includes setting up their account on your platform, adding them to
+                                groups they belong to, connecting third-party services (like Google Drive or Slack), etc. </p>
+                            <p class="wow fadeInUp"> All separate accounts are in a database table with columns for the primary key, account name, and subdomain name. </p>
+                            <p class="wow fadeInUp"> When you have a multi-tenant system, you'll have one database table for each account. Each row will be an account, and the columns are: </p>
+                            <ul class="wow fadeInUp">
+                                <li> The primary key (a unique ID). </li>
+                                <li> Account name. </li>
+                                <li> Subdomain name (if one was specified). </li>
+                                <li> If required, you would add other columns, such as username, email address, etc. </li>
+                            </ul>
+                            <p class="wow fadeInUp mb--80"> Using subdomains to route requests to individual accounts requires a custom DNS server or wildcard certificates and configuring your web server
+                                accordingly. Wildcard certificates aren't free, and configuring your web server can also be tricky. </p>
+                            <h3 class="title mb--30 text-capitalize wow fadeInUp"> Wildcard certificates are not free </h3>
+                            <p class="wow fadeInUp mb--80"> If you're using them, they'll cost money to buy and renew. Configuring your web server can be tricky, too. You'll likely need to reconfigure some
+                                settings for it to work correctly with subdomains for each tenant account. </p>
+                            <h2 class="wow fadeInUp"> Conclusion </h2>
+                            <p class="wow fadeInUp mb--80"> In this article, we looked at the technical aspects of multi-tenant SaaS. The most common approach is to use subdomains to route requests to
+                                individual accounts, but you can also use custom DNS servers or wildcard certificates for your domain name. </p>
+                            <app-tyrone-showers-bio></app-tyrone-showers-bio>
+                            <div class="row wow fadeInUp">
+                                <div class="col"><a href="/blog/oct-2022/leadership-isnt-about-platitudes-or-is-it"><i class="fa fa-chevron-left"
+                                            aria-hidden="true"></i> Previous</a>
+                                </div>
+                                <div class="col text-end"><a href="/blog/oct-2022/scaling-strategies" aria-label="Next"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i> </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================-->
+    <!--=     Call To Action Area Start     =-->
+    <!--=====================================-->
+    <!--=====================================-->
+    <!--=        Footer Area Start       	=-->
+    <!--=====================================-->
+    <app-footer-area></app-footer-area>
+    <!--=====================================-->
+    <!--=       Offcanvas Menu Area       	=-->
+    <!--=====================================-->
+    <app-off-canvas-menu></app-off-canvas-menu>
+</div>
