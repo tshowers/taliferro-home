@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogRoutingModule } from './blog-routing.module';
+import { SharedModule } from '../shared/shared.module';
+// import { FooterComponent } from './shared/footer/footer.component';
+// import { HeaderComponent } from './shared/header/header.component';
 import { Post1Component } from './post1/post1.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { HeaderComponent } from './shared/header/header.component';
 import { Post2Component } from './post2/post2.component';
 import { Post3Component } from './post3/post3.component';
 import { Post4Component } from './post4/post4.component';
@@ -23,11 +24,6 @@ import { Post18Component } from './post18/post18.component';
 import { Post19Component } from './post19/post19.component';
 import { Post20Component } from './post20/post20.component';
 import { Post14Component } from './post14/post14.component';
-import { HeaderAreaLightComponent } from './header-area-light/header-area-light.component';
-import { BreadCrumbLightComponent } from './bread-crumb-light/bread-crumb-light.component';
-import { FooterAreaComponent } from './footer-area/footer-area.component';
-import { OffCanvasMenuComponent } from './off-canvas-menu/off-canvas-menu.component';
-import { TyroneShowersBioComponent } from './tyrone-showers-bio/tyrone-showers-bio.component';
 import { Post21Component } from './post21/post21.component';
 import { Post22Component } from './post22/post22.component';
 import { Post23Component } from './post23/post23.component';
@@ -44,9 +40,10 @@ import { Post30Component } from './post30/post30.component';
 
 @NgModule({
   declarations: [
+    // FooterComponent,
+    // HeaderComponent,
+    ListComponent,
     Post1Component,
-    FooterComponent,
-    HeaderComponent,
     Post2Component,
     Post3Component,
     Post4Component,
@@ -66,17 +63,11 @@ import { Post30Component } from './post30/post30.component';
     Post19Component,
     Post20Component,
     Post14Component,
-    HeaderAreaLightComponent,
-    BreadCrumbLightComponent,
-    FooterAreaComponent,
-    OffCanvasMenuComponent,
-    TyroneShowersBioComponent,
     Post21Component,
     Post22Component,
     Post23Component,
     Post24Component,
     Post25Component,
-    ListComponent,
     Post26Component,
     Post27Component,
     Post28Component,
@@ -85,16 +76,12 @@ import { Post30Component } from './post30/post30.component';
   ],
   imports: [
     CommonModule,
-    BlogRoutingModule
+    BlogRoutingModule,
+    SharedModule
   ],
   exports: [
-    FooterComponent,
-    HeaderComponent,
-    HeaderAreaLightComponent,
-    BreadCrumbLightComponent,
-    FooterAreaComponent,
-    OffCanvasMenuComponent,
-    TyroneShowersBioComponent,
+    // FooterComponent,
+    // HeaderComponent,
 
   ]
 })

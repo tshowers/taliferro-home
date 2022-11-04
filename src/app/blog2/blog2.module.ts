@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Blog2RoutingModule } from './blog2-routing.module';
-import { BlogModule } from '../blog/blog.module';
+import { SharedModule } from '../shared/shared.module';
 import { Oct12022Component } from './oct12022/oct12022.component';
 import { Oct22022Component } from './oct22022/oct22022.component';
 import { Oct32022Component } from './oct32022/oct32022.component';
@@ -27,6 +27,8 @@ import { Oct252022Component } from './oct252022/oct252022.component';
 import { Oct262022Component } from './oct262022/oct262022.component';
 import { Oct272022Component } from './oct272022/oct272022.component';
 import { Oct282022Component } from './oct282022/oct282022.component';
+import { Oct312022Component } from './oct312022/oct312022.component';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
@@ -56,10 +58,12 @@ import { Oct282022Component } from './oct282022/oct282022.component';
     Oct262022Component,
     Oct272022Component,
     Oct282022Component,
+    ListComponent,
+    Oct312022Component,
   ],
   imports: [
     CommonModule,
-    BlogModule,
+    SharedModule,
     Blog2RoutingModule
   ]
 })

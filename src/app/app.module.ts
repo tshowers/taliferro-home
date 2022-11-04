@@ -125,6 +125,8 @@ import { AboutUsAreaComponent } from './about/about-us-area/about-us-area.compon
       { path: 'refund-policy', component: ReturnPolicyComponent, data: { title: 'Return Policy' } },
       { path: 'tyrone-showers', component: TyroneShowersComponent, data: { title: 'Tyrone Showers' } },
       { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)},
+      { path: 'blog/oct-2022', loadChildren: () => import('./blog2/blog2.module').then(m => m.Blog2Module)},
+      { path: 'blog/nov-2022', loadChildren: () => import('./nov2022/nov2022.module').then(m => m.Nov2022Module)},
       { path: '**', component: NotFoundComponent, data: { title: '404 Not Found' } }
     ]),
 

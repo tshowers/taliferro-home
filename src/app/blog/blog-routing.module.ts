@@ -33,8 +33,7 @@ import { Post30Component } from './post30/post30.component';
 import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
-    { path: '', component: ListComponent, data: { title: 'Blog Postings' } },
-    { path: 'oct-2022', loadChildren: () => import('../blog2/blog2.module').then(m => m.Blog2Module)},
+    { path: '', component: ListComponent, data: { title: 'September Postings' } },
     { path: 'dont-let-your-web-store-turn-into-a-desert', component: Post1Component, data: { title: 'Dont let your web store turn into a desert' } },
     { path: 'is-your-website-just-a-business-expense-or-is-it-making-you-money', component: Post2Component, data: { title: 'Is your website just a business expense or is it making you money' } },
     { path: 'oh-how-I-hate-passwords-and-2-factor-authentication', component: Post3Component, data: { title: 'Oh how I\'ve grown to hate passwords and 2-factor authentication' } },

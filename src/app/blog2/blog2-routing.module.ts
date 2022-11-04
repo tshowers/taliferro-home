@@ -25,9 +25,12 @@ import { Oct252022Component } from './oct252022/oct252022.component';
 import { Oct262022Component } from './oct262022/oct262022.component';
 import { Oct272022Component } from './oct272022/oct272022.component';
 import { Oct282022Component } from './oct282022/oct282022.component';
+import { Oct312022Component } from './oct312022/oct312022.component';
 
+import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
+    { path: '', component: ListComponent, data: { title: 'October Postings' } },
     { path: 'are-you-crippling-your-agile-team-with-procedure', component: Oct12022Component, data: { title: 'Are you crippling your Agile team with Procedure?' } },
     { path: 'what-makes-a-good-architecture-one-thats-based-on-academia-or-experience', component: Oct22022Component, data: { title: 'What makes good architecture, one that\'s based on academia or experience?' } },
     { path: 'api-security-checklist', component: Oct32022Component, data: { title: 'API Security Checklist' } },
@@ -53,6 +56,7 @@ const routes: Routes = [
     { path: 'lack-of-resources-or-expertise-is-not-a-big-issue-for-companies', component: Oct262022Component, data: { title: 'Lack of Resources or Expertise is not a big issue for companies' } },
     { path: 'dont-take-cybersecurity-lightly', component: Oct272022Component, data: { title: 'Don\'t take Cybersecurity Lightly' } },
     { path: 'how-we-can-help-with-your-digital-transformation', component: Oct282022Component, data: { title: 'How we can help with your Digital Transformation' } },
+    { path: 'e-commerce-scalability-strategy', component: Oct312022Component, data: { title: 'e-Commerce Scalability Strategy' } },
 ]
 
 @NgModule({
